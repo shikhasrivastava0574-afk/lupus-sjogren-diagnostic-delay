@@ -125,8 +125,9 @@ def predict_risk():
     
     x_input = np.array([feat_dict[f] for f in feature_cols]).reshape(1, -1)
     
-    clf = predictor.fitted_classifiers['RandomForest']
-    reg = predictor.fitted_regressors['RandomForestRegressor']
+    model_name = req_data.get('model_name', 'XGBoost')
+    clf = predictor.fitted_classifiers.get(model_name, predictor.fitted_classifiers['XGBoost'])
+    reg = predictor.fitted_regressors.get(f"{model_name}Regressor", predictor.fitted_regressors['XGBoostRegressor'])
     
     risk_prob = float(clf.predict_proba(x_input)[0, 1])
     est_delay = float(reg.predict(x_input)[0])
@@ -134,6 +135,7 @@ def predict_risk():
     risk_status = "HIGH RISK" if risk_prob > 0.5 else "MODERATE RISK" if risk_prob > 0.3 else "LOW RISK"
     
     return jsonify({
+        'model_used': model_name,
         'risk_probability': round(risk_prob * 100, 1),
         'risk_status': risk_status,
         'estimated_delay_months': round(est_delay, 1),
@@ -150,7 +152,8 @@ def get_shap_explain():
     X_bg = cache['X']
     y_bg = cache['y']
     
-    clf = predictor.fitted_classifiers['RandomForest']
+    model_name = request.args.get('model_name', 'XGBoost')
+    clf = predictor.fitted_classifiers.get(model_name, predictor.fitted_classifiers['XGBoost'])
     explain_engine = DelayExplainabilityEngine(clf, features)
     
     patient_idx = int(request.args.get('patient_index', 10))
@@ -166,6 +169,7 @@ def get_shap_explain():
     local_waterfall = wf_df.to_dict(orient='records')
     
     return jsonify({
+        'model_used': model_name,
         'patient_index': patient_idx,
         'base_value': round(local_exp['base_value'] * 100, 1),
         'patient_risk': round(local_exp['patient_risk'] * 100, 1),

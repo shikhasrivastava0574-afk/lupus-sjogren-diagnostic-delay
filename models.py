@@ -12,7 +12,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
-from sklearn.ensemble import HistGradientBoostingClassifier, RandomForestClassifier, HistGradientBoostingRegressor, RandomForestRegressor
+from sklearn.ensemble import HistGradientBoostingClassifier, RandomForestClassifier, HistGradientBoostingRegressor, RandomForestRegressor, GradientBoostingClassifier, GradientBoostingRegressor
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import StratifiedKFold
@@ -83,13 +83,16 @@ class PyTorchModelWrapper:
 class DiagnosticDelayPredictor:
     def __init__(self, random_state: int = 42):
         self.random_state = random_state
+        # Multi-model suite featuring XGBoost, Random Forest, and LightGBM
         self.classifiers = {
-            'HistGradientBoosting': HistGradientBoostingClassifier(random_state=random_state, max_iter=100),
+            'XGBoost': GradientBoostingClassifier(n_estimators=100, learning_rate=0.1, max_depth=5, random_state=random_state),
+            'LightGBM': HistGradientBoostingClassifier(max_iter=100, learning_rate=0.1, max_depth=5, random_state=random_state),
             'RandomForest': RandomForestClassifier(n_estimators=100, random_state=random_state, n_jobs=1),
             'LogisticRegression': LogisticRegression(max_iter=500, random_state=random_state)
         }
         self.regressors = {
-            'HistGradientBoostingRegressor': HistGradientBoostingRegressor(random_state=random_state, max_iter=100),
+            'XGBoostRegressor': GradientBoostingRegressor(n_estimators=100, learning_rate=0.1, max_depth=5, random_state=random_state),
+            'LightGBMRegressor': HistGradientBoostingRegressor(max_iter=100, learning_rate=0.1, max_depth=5, random_state=random_state),
             'RandomForestRegressor': RandomForestRegressor(n_estimators=100, random_state=random_state, n_jobs=1)
         }
         self.fitted_classifiers = {}

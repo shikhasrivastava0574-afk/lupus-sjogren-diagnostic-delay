@@ -141,7 +141,15 @@
                         <i class="fa-solid fa-sliders text-indigo-400 mr-2"></i>Patient Clinical Parameters (12m Window)
                     </h3>
                     
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid grid-cols-3 gap-4">
+                        <div>
+                            <label class="text-xs text-slate-400 block mb-1">Predictive ML Model</label>
+                            <select id="in-model" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-indigo-400 font-semibold focus:outline-none" onchange="updatePredictor()">
+                                <option value="XGBoost" selected>🚀 XGBoost</option>
+                                <option value="LightGBM">⚡ LightGBM</option>
+                                <option value="RandomForest">🌲 Random Forest</option>
+                            </select>
+                        </div>
                         <div>
                             <label class="text-xs text-slate-400 block mb-1">Age at Symptom Onset</label>
                             <input type="range" id="in-age" min="18" max="75" value="34" class="w-full accent-indigo-500" oninput="updatePredictor()">
@@ -457,6 +465,7 @@
             document.getElementById('val-age').innerText = age + ' Years';
 
             const payload = {
+                model_name: document.getElementById('in-model').value,
                 age: parseInt(age),
                 sex: document.getElementById('in-sex').value,
                 encounters: parseInt(document.getElementById('in-encounters').value),
@@ -486,22 +495,23 @@
             const pill = document.getElementById('res-risk-pill');
             if (data.risk_probability > 50) {
                 pill.className = "px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/40";
-                pill.innerText = "🔴 HIGH RISK (>24m Delay)";
+                pill.innerText = `🔴 HIGH RISK (${data.model_used})`;
             } else if (data.risk_probability > 30) {
                 pill.className = "px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/40";
-                pill.innerText = "🟡 MODERATE RISK";
+                pill.innerText = `🟡 MODERATE RISK (${data.model_used})`;
             } else {
                 pill.className = "px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40";
-                pill.innerText = "🟢 LOW RISK";
+                pill.innerText = `🟢 LOW RISK (${data.model_used})`;
             }
         }
 
         // SHAP Explainability API
         async function loadSHAPData() {
             const pIdx = document.getElementById('xai-pat-idx').value;
+            const modelName = document.getElementById('in-model') ? document.getElementById('in-model').value : 'XGBoost';
             document.getElementById('val-pat-idx').innerText = '#' + pIdx;
 
-            const res = await fetch('/api/shap_explain?patient_index=' + pIdx);
+            const res = await fetch(`/api/shap_explain?patient_index=${pIdx}&model_name=${modelName}`);
             const data = await res.json();
 
             document.getElementById('val-base-risk').innerText = `Base: ${data.base_value}% → Patient: ${data.patient_risk}%`;
