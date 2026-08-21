@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoimmuneXAI — Explainable Diagnostic Delay ML Framework</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { 50: '#f0fdf4', 500: '#10b981', 600: '#059669', 900: '#064e3b' },
+                        darkbg: '#0f172a',
+                        cardbg: '#1e293b'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
+
+    <!-- Top Navigation Header -->
+    <header class="bg-slate-800/80 backdrop-blur border-b border-slate-700/60 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-rose-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-rose-500/20">
+                    <i class="fa-solid fa-droplet text-white text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg leading-none text-white">AutoimmuneXAI</h1>
+                    <p class="text-xs text-slate-400 mt-1">Predicting Diagnostic Delay in SLE & Sjögren's Disease</p>
+                </div>
+            </div>
+            
+            <!-- Nav Tabs -->
+            <nav class="flex space-x-1 sm:space-x-2 bg-slate-900/60 p-1.5 rounded-xl border border-slate-700/50">
+                <button onclick="switchTab('tab-cohort')" id="btn-cohort" class="nav-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-lg transition-all text-white bg-indigo-600 shadow">
+                    <i class="fa-solid fa-chart-pie mr-1.5"></i>Cohort Analytics
+                </button>
+                <button onclick="switchTab('tab-predict')" id="btn-predict" class="nav-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-lg transition-all text-slate-400 hover:text-white">
+                    <i class="fa-solid fa-bolt mr-1.5"></i>Risk Calculator
+                </button>
+                <button onclick="switchTab('tab-xai')" id="btn-xai" class="nav-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-lg transition-all text-slate-400 hover:text-white">
+                    <i class="fa-solid fa-brain mr-1.5"></i>XAI Explainability
+                </button>
+                <button onclick="switchTab('tab-counterfactual')" id="btn-counterfactual" class="nav-btn px-3 py-1.5 text-xs sm:text-sm font-medium rounded-lg transition-all text-slate-400 hover:text-white">
+                    <i class="fa-solid fa-wand-magic-sparkles mr-1.5"></i>What-If Engine
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow">
+
+        <!-- TAB 1: COHORT ANALYTICS -->
+        <section id="tab-cohort" class="tab-content space-y-6">
+            <!-- Hero Stats Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-5 shadow-sm hover:border-slate-600 transition">
+                    <div class="flex items-center justify-between text-slate-400 mb-2">
+                        <span class="text-xs uppercase font-semibold tracking-wider">Total Patients</span>
+                        <i class="fa-solid fa-users text-indigo-400"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-white" id="stat-total">1,500</div>
+                    <p class="text-xs text-slate-400 mt-2">Longitudinal EHR Trajectories</p>
+                </div>
+                
+                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-5 shadow-sm hover:border-slate-600 transition">
+                    <div class="flex items-center justify-between text-slate-400 mb-2">
+                        <span class="text-xs uppercase font-semibold tracking-wider">SLE Cohort</span>
+                        <i class="fa-solid fa-shield-halved text-rose-400"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-rose-400" id="stat-sle">500</div>
+                    <p class="text-xs text-slate-400 mt-2">Systemic Lupus Erythematosus</p>
+                </div>
+                
+                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-5 shadow-sm hover:border-slate-600 transition">
+                    <div class="flex items-center justify-between text-slate-400 mb-2">
+                        <span class="text-xs uppercase font-semibold tracking-wider">Sjögren's Cohort</span>
+                        <i class="fa-solid fa-eye-dropper text-sky-400"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-sky-400" id="stat-sjd">500</div>
+                    <p class="text-xs text-slate-400 mt-2">Sjögren's Disease (Sicca)</p>
+                </div>
+                
+                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-5 shadow-sm hover:border-slate-600 transition">
+                    <div class="flex items-center justify-between text-slate-400 mb-2">
+                        <span class="text-xs uppercase font-semibold tracking-wider">Avg Diagnostic Delay</span>
+                        <i class="fa-solid fa-clock text-amber-400"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-amber-400" id="stat-delay">26.9 Mo</div>
+                    <p class="text-xs text-amber-400/80 mt-2">55% Experience >24m Delay</p>
+                </div>
+            </div>
+
+            <!-- Charts Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Delay Distribution Chart -->
+                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-semibold text-lg text-white">Diagnostic Delay Distribution (Months)</h3>
+                        <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded-full">SLE vs SjD</span>
+                    </div>
+                    <div class="h-72">
+                        <canvas id="chart-delay-dist"></canvas>
+                    </div>
+                </div>
+
+                <!-- Early Symptoms Chart -->
+                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-semibold text-lg text-white">Early Non-Specific Symptom Prevalence</h3>
+                        <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded-full">Trajectory Features</span>
+                    </div>
+                    <div class="h-72">
+                        <canvas id="chart-symptoms"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: PATIENT RISK PREDICTOR -->
+        <section id="tab-predict" class="tab-content hidden space-y-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Form Inputs -->
+                <div class="lg:col-span-6 bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 space-y-5">
+                    <h3 class="font-semibold text-lg text-white border-b border-slate-700 pb-3 flex items-center">
+                        <i class="fa-solid fa-sliders text-indigo-400 mr-2"></i>Patient Clinical Parameters (12m Window)
+                    </h3>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs text-slate-400 block mb-1">Age at Symptom Onset</label>
+                            <input type="range" id="in-age" min="18" max="75" value="34" class="w-full accent-indigo-500" oninput="updatePredictor()">
+                            <span class="text-xs font-semibold text-indigo-400" id="val-age">34 Years</span>
+                        </div>
+                        <div>
+                            <label class="text-xs text-slate-400 block mb-1">Sex</label>
+                            <select id="in-sex" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-1.5 text-sm text-white focus:outline-none focus:border-indigo-500" onchange="updatePredictor()">
+                                <option value="Female">Female</option>
+                                <option value="Male">Male</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-xs text-slate-400 block mb-1">Total Healthcare Encounters (12 Months)</label>
+                        <input type="number" id="in-encounters" value="6" min="1" max="15" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-1.5 text-sm text-white focus:outline-none focus:border-indigo-500" onchange="updatePredictor()">
+                    </div>
+
+                    <!-- Symptoms Checklist -->
+                    <div>
+                        <label class="text-xs font-semibold uppercase text-slate-400 tracking-wider block mb-2">Non-Specific Early Symptoms</label>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <label class="flex items-center space-x-2 bg-slate-900/50 p-2 rounded-lg border border-slate-700/50 cursor-pointer">
+                                <input type="checkbox" id="sym-arthralgia" checked class="rounded text-indigo-600 focus:ring-0" onchange="updatePredictor()">
+                                <span>Arthralgia (Joint Pain)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 bg-slate-900/50 p-2 rounded-lg border border-slate-700/50 cursor-pointer">
+                                <input type="checkbox" id="sym-fatigue" checked class="rounded text-indigo-600 focus:ring-0" onchange="updatePredictor()">
+                                <span>Chronic Fatigue</span>
+                            </label>
+                            <label class="flex items-center space-x-2 bg-slate-900/50 p-2 rounded-lg border border-slate-700/50 cursor-pointer">
+                                <input type="checkbox" id="sym-dryeyes" class="rounded text-indigo-600 focus:ring-0" onchange="updatePredictor()">
+                                <span>Dry Eyes (Sicca)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 bg-slate-900/50 p-2 rounded-lg border border-slate-700/50 cursor-pointer">
+                                <input type="checkbox" id="sym-drymouth" class="rounded text-indigo-600 focus:ring-0" onchange="updatePredictor()">
+                                <span>Dry Mouth (Sicca)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 bg-slate-900/50 p-2 rounded-lg border border-slate-700/50 cursor-pointer">
+                                <input type="checkbox" id="sym-malar" checked class="rounded text-indigo-600 focus:ring-0" onchange="updatePredictor()">
+                                <span>Malar Rash (Butterfly)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 bg-slate-900/50 p-2 rounded-lg border border-slate-700/50 cursor-pointer">
+                                <input type="checkbox" id="sym-raynaud" class="rounded text-indigo-600 focus:ring-0" onchange="updatePredictor()">
+                                <span>Raynaud's Vasospasm</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Serology & Labs -->
+                    <div>
+                        <label class="text-xs font-semibold uppercase text-slate-400 tracking-wider block mb-2">Serology Biomarkers & Care Dynamics</label>
+                        <div class="grid grid-cols-2 gap-3 text-sm">
+                            <div>
+                                <label class="text-xs text-slate-400 block mb-1">ANA Titer Level</label>
+                                <select id="in-ana" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1.5 text-sm text-white" onchange="updatePredictor()">
+                                    <option value="0">Negative (0)</option>
+                                    <option value="80">1:80</option>
+                                    <option value="160">1:160</option>
+                                    <option value="320" selected>1:320</option>
+                                    <option value="640">1:640</option>
+                                    <option value="1280">1:1280</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="text-xs text-slate-400 block mb-1">Anti-dsDNA (IU/mL)</label>
+                                <input type="number" id="in-dsdna" value="45.0" step="5" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1.5 text-sm text-white" onchange="updatePredictor()">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-2 mt-3 text-sm">
+                            <label class="flex items-center space-x-2 bg-slate-900/50 p-2 rounded-lg border border-slate-700/50 cursor-pointer">
+                                <input type="checkbox" id="lab-lowc3" checked class="rounded text-indigo-600" onchange="updatePredictor()">
+                                <span>Low Complement C3 (<80)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 bg-slate-900/50 p-2 rounded-lg border border-slate-700/50 cursor-pointer">
+                                <input type="checkbox" id="lab-rheum" class="rounded text-indigo-600" onchange="updatePredictor()">
+                                <span>Seen Rheumatologist</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prediction Output Panel -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 space-y-6">
+                        <h3 class="font-semibold text-lg text-white border-b border-slate-700 pb-3 flex items-center">
+                            <i class="fa-solid fa-heart-pulse text-rose-400 mr-2"></i>Predictive Diagnostic Risk Assessment
+                        </h3>
+
+                        <!-- Risk Meter Banner -->
+                        <div class="bg-slate-900/80 rounded-xl p-6 text-center border border-slate-700/80 space-y-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Prolonged Delay Risk (>24 Months)</span>
+                            <div class="text-5xl font-extrabold text-rose-500" id="res-risk-prob">78.4%</div>
+                            <div>
+                                <span id="res-risk-pill" class="px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/40">🔴 HIGH RISK (>24m Delay)</span>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Metrics -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-slate-900/50 border border-slate-700/50 rounded-xl p-4 text-center">
+                                <span class="text-xs text-slate-400 block mb-1">Estimated Diagnostic Delay</span>
+                                <span class="text-2xl font-bold text-amber-400" id="res-delay-months">34.2 Months</span>
+                            </div>
+                            <div class="bg-slate-900/50 border border-slate-700/50 rounded-xl p-4 text-center">
+                                <span class="text-xs text-slate-400 block mb-1">Simplified Clinical Score</span>
+                                <span class="text-2xl font-bold text-indigo-400" id="res-sle-score">15.0 Points</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: XAI EXPLAINABILITY HUB -->
+        <section id="tab-xai" class="tab-content hidden space-y-6">
+            <div class="flex items-center justify-between bg-slate-800/60 p-4 rounded-2xl border border-slate-700/60">
+                <div>
+                    <h3 class="font-semibold text-lg text-white">SHAP Model Interpretability Hub</h3>
+                    <p class="text-xs text-slate-400">Model-agnostic SHAP feature attributions for population and individual predictions.</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <label class="text-xs text-slate-400">Select Patient Index:</label>
+                    <input type="range" id="xai-pat-idx" min="0" max="100" value="10" class="accent-indigo-500" oninput="loadSHAPData()">
+                    <span class="text-xs font-bold text-indigo-400" id="val-pat-idx">#10</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Global Importance -->
+                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6">
+                    <h4 class="font-semibold text-md text-white mb-4">Global Population Risk Drivers (SHAP)</h4>
+                    <div class="h-80">
+                        <canvas id="chart-global-shap"></canvas>
+                    </div>
+                </div>
+
+                <!-- Local Waterfall -->
+                <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="font-semibold text-md text-white">Local Patient Risk Waterfall</h4>
+                        <span class="text-xs text-indigo-400 font-semibold" id="val-base-risk">Base: 56.3% → Patient: 78.4%</span>
+                    </div>
+                    <div class="h-80">
+                        <canvas id="chart-local-shap"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: COUNTERFACTUAL WHAT-IF ENGINE -->
+        <section id="tab-counterfactual" class="tab-content hidden space-y-6">
+            <div class="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 space-y-6">
+                <div class="flex items-center justify-between border-b border-slate-700 pb-4">
+                    <div>
+                        <h3 class="font-semibold text-lg text-white">Counterfactual Diagnostic Delay Reduction Engine</h3>
+                        <p class="text-xs text-slate-400">Simulate early clinical actions to quantify risk reduction and diagnostic months saved.</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <label class="text-xs text-slate-400">Select High-Risk Patient:</label>
+                        <input type="range" id="cf-pat-idx" min="0" max="50" value="5" class="accent-indigo-500" oninput="runCounterfactual()">
+                        <span class="text-xs font-bold text-indigo-400" id="val-cf-pat">#5</span>
+                    </div>
+                </div>
+
+                <!-- Action Toggles -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <label class="flex items-center justify-between bg-slate-900/60 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-vial-circle-check text-indigo-400 text-xl"></i>
+                            <div>
+                                <span class="font-semibold text-sm text-white">Order Early Serology Panel</span>
+                                <p class="text-xs text-slate-400">ANA Titer + Anti-SSA/Ro + Anti-dsDNA</p>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="cf-act-serology" checked class="w-5 h-5 rounded text-indigo-600" onchange="runCounterfactual()">
+                    </label>
+
+                    <label class="flex items-center justify-between bg-slate-900/60 p-4 rounded-xl border border-slate-700 cursor-pointer">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-user-doctor text-emerald-400 text-xl"></i>
+                            <div>
+                                <span class="font-semibold text-sm text-white">Immediate Rheumatology Referral</span>
+                                <p class="text-xs text-slate-400">Bypass non-specialist visit loop</p>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="cf-act-rheum" checked class="w-5 h-5 rounded text-indigo-600" onchange="runCounterfactual()">
+                    </label>
+                </div>
+
+                <!-- Comparison Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
+                    <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-700/80 text-center">
+                        <span class="text-xs text-slate-400 block mb-1">Projected New Risk</span>
+                        <div class="text-3xl font-extrabold text-emerald-400" id="cf-new-risk">24.5%</div>
+                        <span class="text-xs text-emerald-400 font-semibold mt-1 inline-block" id="cf-risk-delta">-53.9% Risk Reduction</span>
+                    </div>
+
+                    <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-700/80 text-center">
+                        <span class="text-xs text-slate-400 block mb-1">New Projected Delay</span>
+                        <div class="text-3xl font-extrabold text-amber-400" id="cf-new-delay">14.2 Months</div>
+                        <span class="text-xs text-amber-400 font-semibold mt-1 inline-block" id="cf-saved-months">19.7 Months Saved</span>
+                    </div>
+
+                    <div class="bg-slate-900/80 p-5 rounded-xl border border-slate-700/80 text-center flex flex-col items-center justify-center">
+                        <span class="text-xs text-slate-400 block mb-1">Clinical Action Status</span>
+                        <div id="cf-recommendation-badge" class="px-3 py-1.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 mt-1">
+                            ✅ CLINICALLY RECOMMENDED
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- App JavaScript Logic -->
+    <script>
+        let delayChart, symptomChart, globalShapChart, localShapChart;
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById(tabId).classList.remove('hidden');
+            
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('bg-indigo-600', 'text-white', 'shadow');
+                btn.classList.add('text-slate-400');
+            });
+            
+            const btnMap = {
+                'tab-cohort': 'btn-cohort',
+                'tab-predict': 'btn-predict',
+                'tab-xai': 'btn-xai',
+                'tab-counterfactual': 'btn-counterfactual'
+            };
+            const activeBtn = document.getElementById(btnMap[tabId]);
+            activeBtn.classList.remove('text-slate-400');
+            activeBtn.classList.add('bg-indigo-600', 'text-white', 'shadow');
+
+            if (tabId === 'tab-xai') loadSHAPData();
+            if (tabId === 'tab-counterfactual') runCounterfactual();
+        }
+
+        // Initialize Cohort Data
+        async function loadCohortOverview() {
+            const res = await fetch('/api/cohort_overview');
+            const data = await res.json();
+
+            document.getElementById('stat-total').innerText = data.total_patients.toLocaleString();
+            document.getElementById('stat-sle').innerText = data.sle_count.toLocaleString();
+            document.getElementById('stat-sjd').innerText = data.sjd_count.toLocaleString();
+            document.getElementById('stat-delay').innerText = data.avg_delay_months.toFixed(1) + ' Mo';
+
+            // Chart 1: Delay Distribution
+            const ctx1 = document.getElementById('chart-delay-dist').getContext('2d');
+            if (delayChart) delayChart.destroy();
+
+            delayChart = new Chart(ctx1, {
+                type: 'bar',
+                data: {
+                    labels: ['0-6m', '6-12m', '12-18m', '18-24m', '24-36m', '36-48m', '48m+'],
+                    datasets: [
+                        { label: 'SLE Patients', data: [45, 65, 80, 70, 140, 70, 30], backgroundColor: '#f43f5e' },
+                        { label: 'Sjögren\'s Patients', data: [30, 50, 70, 60, 160, 90, 40], backgroundColor: '#38bdf8' }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+                        y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } }
+                    },
+                    plugins: { legend: { labels: { color: '#f8fafc' } } }
+                }
+            });
+
+            // Chart 2: Symptom Prevalence
+            const ctx2 = document.getElementById('chart-symptoms').getContext('2d');
+            if (symptomChart) symptomChart.destroy();
+
+            const symLabels = Object.keys(data.symptom_prevalence);
+            const symValues = Object.values(data.symptom_prevalence);
+
+            symptomChart = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: symLabels,
+                    datasets: [{
+                        label: 'Prevalence (%)',
+                        data: symValues,
+                        backgroundColor: '#6366f1'
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+                        y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        // Live Risk Predictor Call
+        async function updatePredictor() {
+            const age = document.getElementById('in-age').value;
+            document.getElementById('val-age').innerText = age + ' Years';
+
+            const payload = {
+                age: parseInt(age),
+                sex: document.getElementById('in-sex').value,
+                encounters: parseInt(document.getElementById('in-encounters').value),
+                arthralgia: document.getElementById('sym-arthralgia').checked,
+                fatigue: document.getElementById('sym-fatigue').checked,
+                dry_eyes: document.getElementById('sym-dryeyes').checked,
+                dry_mouth: document.getElementById('sym-drymouth').checked,
+                malar_rash: document.getElementById('sym-malar').checked,
+                raynaud: document.getElementById('sym-raynaud').checked,
+                ana_titer: parseInt(document.getElementById('in-ana').value),
+                anti_dsdna: parseFloat(document.getElementById('in-dsdna').value),
+                low_c3: document.getElementById('lab-lowc3').checked,
+                seen_rheumatologist: document.getElementById('lab-rheum').checked
+            };
+
+            const res = await fetch('/api/predict_risk', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            const data = await res.json();
+
+            document.getElementById('res-risk-prob').innerText = data.risk_probability + '%';
+            document.getElementById('res-delay-months').innerText = data.estimated_delay_months + ' Months';
+            document.getElementById('res-sle-score').innerText = data.sle_clinical_score + ' Points';
+
+            const pill = document.getElementById('res-risk-pill');
+            if (data.risk_probability > 50) {
+                pill.className = "px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/40";
+                pill.innerText = "🔴 HIGH RISK (>24m Delay)";
+            } else if (data.risk_probability > 30) {
+                pill.className = "px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/40";
+                pill.innerText = "🟡 MODERATE RISK";
+            } else {
+                pill.className = "px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40";
+                pill.innerText = "🟢 LOW RISK";
+            }
+        }
+
+        // SHAP Explainability API
+        async function loadSHAPData() {
+            const pIdx = document.getElementById('xai-pat-idx').value;
+            document.getElementById('val-pat-idx').innerText = '#' + pIdx;
+
+            const res = await fetch('/api/shap_explain?patient_index=' + pIdx);
+            const data = await res.json();
+
+            document.getElementById('val-base-risk').innerText = `Base: ${data.base_value}% → Patient: ${data.patient_risk}%`;
+
+            // Global Chart
+            const ctx1 = document.getElementById('chart-global-shap').getContext('2d');
+            if (globalShapChart) globalShapChart.destroy();
+
+            globalShapChart = new Chart(ctx1, {
+                type: 'bar',
+                data: {
+                    labels: data.global_importance.map(d => d.feature),
+                    datasets: [{ label: 'Mean |SHAP|', data: data.global_importance.map(d => d.importance_mean), backgroundColor: '#818cf8' }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: { x: { grid: { color: '#334155' } }, y: { grid: { color: '#334155' } } }
+                }
+            });
+
+            // Local Waterfall Chart
+            const ctx2 = document.getElementById('chart-local-shap').getContext('2d');
+            if (localShapChart) localShapChart.destroy();
+
+            localShapChart = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: data.local_waterfall.map(d => d.feature),
+                    datasets: [{
+                        label: 'SHAP Value',
+                        data: data.local_waterfall.map(d => d.shap_value),
+                        backgroundColor: data.local_waterfall.map(d => d.shap_value > 0 ? '#f43f5e' : '#10b981')
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: { x: { grid: { color: '#334155' } }, y: { grid: { color: '#334155' } } }
+                }
+            });
+        }
+
+        // Counterfactual Simulation Call
+        async function runCounterfactual() {
+            const pIdx = document.getElementById('cf-pat-idx').value;
+            document.getElementById('val-cf-pat').innerText = '#' + pIdx;
+
+            const payload = {
+                patient_index: parseInt(pIdx),
+                order_serology: document.getElementById('cf-act-serology').checked,
+                rheumatologist_referral: document.getElementById('cf-act-rheum').checked
+            };
+
+            const res = await fetch('/api/counterfactual', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            const data = await res.json();
+
+            document.getElementById('cf-new-risk').innerText = data.cf_risk + '%';
+            document.getElementById('cf-risk-delta').innerText = `-${data.risk_reduction_pct}% Risk Reduction`;
+            document.getElementById('cf-new-delay').innerText = data.cf_delay + ' Months';
+            document.getElementById('cf-saved-months').innerText = `${data.months_saved} Months Saved`;
+        }
+
+        window.onload = function() {
+            loadCohortOverview();
+            updatePredictor();
+        };
+    </script>
+</body>
+</html>

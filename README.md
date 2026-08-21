@@ -19,13 +19,15 @@ Rather than building another standard disease classifier (*"Does patient X have 
 ## 🏗️ Repository Architecture
 
 ```
+├── app_flask.py                       # Flask REST API and web application server
+├── templates/
+│   └── index.html                     # Modern HTML5 + Tailwind CSS + Chart.js web dashboard
 ├── data_simulator.py                  # Clinically realistic longitudinal synthetic EHR generator
 ├── preprocessing_feature_engineering.py# 52-dimensional temporal feature extraction pipeline
 ├── models.py                          # PyTorch LSTM, RandomForest, HistGradientBoosting classifiers/regressors
 ├── explainability.py                  # Model-agnostic SHAP local & global attribution engine
 ├── evaluation.py                      # Multi-window benchmark evaluator & delay reduction calculator
 ├── train_and_save_pipeline.py         # Offline pipeline training & serialization script
-├── app.py                             # Interactive Streamlit Web Application Dashboard
 ├── requirements.txt                   # Python environment dependencies
 ├── benchmark_results.json             # Cross-validation performance outputs
 ├── tests/
@@ -59,7 +61,7 @@ Evaluated using 5-Fold Stratified Cross-Validation across 6, 12, and 24-month ob
 ### 1. Installation
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/YOUR_USERNAME/lupus-sjogren-diagnostic-delay.git
+git clone https://github.com/shikhasrivastava0574-afk/lupus-sjogren-diagnostic-delay.git
 cd lupus-sjogren-diagnostic-delay
 pip install -r requirements.txt
 ```
@@ -76,11 +78,11 @@ python3 tests/test_framework.py
 python3 evaluation.py
 ```
 
-### 4. Launch Interactive Web Dashboard
+### 4. Launch Custom Modern Web Dashboard
 ```bash
-streamlit run app.py
+python3 app_flask.py
 ```
-Open **`http://localhost:8501`** in your browser.
+Open **`http://localhost:5050`** in your browser.
 
 ---
 
