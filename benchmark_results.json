@@ -1,0 +1,155 @@
+{
+  "T_obs_6_months": {
+    "observation_window_months": 6,
+    "classification_metrics": {
+      "HistGradientBoosting": {
+        "ROC_AUC": 0.8096417069243156,
+        "PR_AUC": 0.8119355831939845,
+        "Brier_Score": 0.1965775156098685,
+        "Accuracy": 0.739,
+        "Sensitivity": 0.7851851851851852,
+        "Specificity": 0.6847826086956522
+      },
+      "RandomForest": {
+        "ROC_AUC": 0.8173611111111111,
+        "PR_AUC": 0.8235344528944903,
+        "Brier_Score": 0.1720122,
+        "Accuracy": 0.748,
+        "Sensitivity": 0.8055555555555556,
+        "Specificity": 0.6804347826086956
+      },
+      "LogisticRegression": {
+        "ROC_AUC": 0.8180555555555555,
+        "PR_AUC": 0.8130235295629167,
+        "Brier_Score": 0.1744569942258625,
+        "Accuracy": 0.746,
+        "Sensitivity": 0.8037037037037036,
+        "Specificity": 0.6782608695652173
+      },
+      "PyTorch_LSTM": {
+        "ROC_AUC": 0.872524154589372,
+        "PR_AUC": 0.8596941362845806,
+        "Brier_Score": 0.1410594716668129,
+        "Accuracy": 0.796,
+        "Sensitivity": 0.8351851851851851,
+        "Specificity": 0.75
+      }
+    },
+    "regression_metrics": {
+      "HistGradientBoostingRegressor": {
+        "MAE_Months": 9.206820663225258
+      },
+      "RandomForestRegressor": {
+        "MAE_Months": 8.968800000000002
+      }
+    },
+    "impact_simulation": {
+      "prolonged_delay_cases_detected": 436,
+      "detection_rate_pct": 80.74074074074075,
+      "avg_months_saved_per_flagged_patient": 19.709862385321102,
+      "total_cohort_delay_months_saved": 8593.5
+    }
+  },
+  "T_obs_12_months": {
+    "observation_window_months": 12,
+    "classification_metrics": {
+      "HistGradientBoosting": {
+        "ROC_AUC": 0.8710547504025765,
+        "PR_AUC": 0.8792183868987046,
+        "Brier_Score": 0.1595201332238298,
+        "Accuracy": 0.782,
+        "Sensitivity": 0.8277777777777778,
+        "Specificity": 0.7282608695652174
+      },
+      "RandomForest": {
+        "ROC_AUC": 0.8762580515297905,
+        "PR_AUC": 0.8848957229701735,
+        "Brier_Score": 0.1421235,
+        "Accuracy": 0.794,
+        "Sensitivity": 0.837037037037037,
+        "Specificity": 0.7434782608695653
+      },
+      "LogisticRegression": {
+        "ROC_AUC": 0.8709339774557167,
+        "PR_AUC": 0.8726707100703444,
+        "Brier_Score": 0.14665719327538046,
+        "Accuracy": 0.784,
+        "Sensitivity": 0.8092592592592593,
+        "Specificity": 0.7543478260869565
+      },
+      "PyTorch_LSTM": {
+        "ROC_AUC": 0.9195048309178743,
+        "PR_AUC": 0.9209353716902564,
+        "Brier_Score": 0.10991916209459304,
+        "Accuracy": 0.8470000000000001,
+        "Sensitivity": 0.8777777777777779,
+        "Specificity": 0.8108695652173914
+      }
+    },
+    "regression_metrics": {
+      "HistGradientBoostingRegressor": {
+        "MAE_Months": 8.060343120404326
+      },
+      "RandomForestRegressor": {
+        "MAE_Months": 8.0133
+      }
+    },
+    "impact_simulation": {
+      "prolonged_delay_cases_detected": 463,
+      "detection_rate_pct": 85.74074074074073,
+      "avg_months_saved_per_flagged_patient": 19.52375809935205,
+      "total_cohort_delay_months_saved": 9039.5
+    }
+  },
+  "T_obs_24_months": {
+    "observation_window_months": 24,
+    "classification_metrics": {
+      "HistGradientBoosting": {
+        "ROC_AUC": 0.8964975845410628,
+        "PR_AUC": 0.9017504091402596,
+        "Brier_Score": 0.14401166931754278,
+        "Accuracy": 0.819,
+        "Sensitivity": 0.8555555555555555,
+        "Specificity": 0.7760869565217391
+      },
+      "RandomForest": {
+        "ROC_AUC": 0.898299114331723,
+        "PR_AUC": 0.9063870316333962,
+        "Brier_Score": 0.1294341,
+        "Accuracy": 0.8130000000000001,
+        "Sensitivity": 0.8629629629629629,
+        "Specificity": 0.7543478260869565
+      },
+      "LogisticRegression": {
+        "ROC_AUC": 0.8946859903381643,
+        "PR_AUC": 0.8934385953675775,
+        "Brier_Score": 0.1294250645691512,
+        "Accuracy": 0.8150000000000001,
+        "Sensitivity": 0.8555555555555557,
+        "Specificity": 0.7673913043478262
+      },
+      "PyTorch_LSTM": {
+        "ROC_AUC": 0.9152173913043479,
+        "PR_AUC": 0.9224506271233783,
+        "Brier_Score": 0.11154988333582878,
+        "Accuracy": 0.843,
+        "Sensitivity": 0.8777777777777779,
+        "Specificity": 0.8021739130434783
+      }
+    },
+    "regression_metrics": {
+      "HistGradientBoostingRegressor": {
+        "MAE_Months": 7.108491535239854
+      },
+      "RandomForestRegressor": {
+        "MAE_Months": 6.93404
+      }
+    },
+    "impact_simulation": {
+      "prolonged_delay_cases_detected": 459,
+      "detection_rate_pct": 85.0,
+      "avg_months_saved_per_flagged_patient": 13.325708061002178,
+      "total_cohort_delay_months_saved": 6116.5
+    }
+  }
+}

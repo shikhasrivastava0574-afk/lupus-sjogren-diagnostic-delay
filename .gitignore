@@ -1,0 +1,20 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# IDE configuration
+.vscode/
+.idea/
+
+# Streamlit temporary config
+.streamlit/credentials.toml
+.streamlit/config.toml
+
+# Log files
+*.log
+/tmp/

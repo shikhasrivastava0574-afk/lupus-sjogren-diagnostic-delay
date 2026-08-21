@@ -1,0 +1,1501 @@
+patient_id,disease,age_onset,sex,race,first_symptom_month,diagnosis_month,diagnostic_delay_months,prolonged_delay
+PAT_0001,Control,31,Female,Caucasian,0,,,0
+PAT_0002,SLE,43,Female,Caucasian,2,17.0,15.0,0
+PAT_0003,SLE,34,Male,Caucasian,1,4.0,3.0,0
+PAT_0004,SjD,63,Male,Asian,0,28.0,28.0,1
+PAT_0005,SjD,31,Female,Caucasian,3,44.0,41.0,1
+PAT_0006,Control,57,Female,Caucasian,3,,,0
+PAT_0007,Control,18,Female,Caucasian,3,,,0
+PAT_0008,SLE,33,Female,Asian,2,24.0,22.0,0
+PAT_0009,Control,39,Male,Hispanic,3,,,0
+PAT_0010,Control,47,Male,Hispanic,2,,,0
+PAT_0011,SLE,25,Female,Caucasian,5,14.0,9.0,0
+PAT_0012,Control,44,Male,Caucasian,3,,,0
+PAT_0013,SjD,52,Female,African American,5,21.0,16.0,0
+PAT_0014,SjD,29,Female,Hispanic,3,22.0,19.0,0
+PAT_0015,SjD,36,Female,Caucasian,0,43.0,43.0,1
+PAT_0016,SLE,19,Female,Caucasian,1,23.0,22.0,0
+PAT_0017,SjD,49,Female,Hispanic,2,19.0,17.0,0
+PAT_0018,Control,37,Female,African American,3,,,0
+PAT_0019,SjD,53,Female,African American,1,14.0,13.0,0
+PAT_0020,SjD,35,Female,Caucasian,3,29.0,26.0,1
+PAT_0021,Control,42,Male,African American,0,,,0
+PAT_0022,SjD,49,Female,Caucasian,3,42.0,39.0,1
+PAT_0023,SLE,20,Female,Caucasian,5,43.0,38.0,1
+PAT_0024,Control,25,Female,African American,4,,,0
+PAT_0025,SjD,40,Female,African American,5,22.0,17.0,0
+PAT_0026,SjD,59,Female,Caucasian,0,51.0,51.0,1
+PAT_0027,Control,72,Female,African American,3,,,0
+PAT_0028,SjD,58,Female,Caucasian,0,51.0,51.0,1
+PAT_0029,SLE,36,Female,Caucasian,3,33.0,30.0,1
+PAT_0030,SLE,25,Female,Caucasian,5,44.0,39.0,1
+PAT_0031,SLE,25,Female,Caucasian,1,40.0,39.0,1
+PAT_0032,SLE,26,Female,Caucasian,0,28.0,28.0,1
+PAT_0033,SLE,38,Female,Caucasian,2,8.0,6.0,0
+PAT_0034,Control,44,Female,Caucasian,3,,,0
+PAT_0035,SjD,49,Female,Other,4,17.0,13.0,0
+PAT_0036,Control,40,Female,Caucasian,0,,,0
+PAT_0037,Control,49,Female,African American,0,,,0
+PAT_0038,SLE,34,Female,African American,0,17.0,17.0,0
+PAT_0039,Control,51,Female,Hispanic,0,,,0
+PAT_0040,SjD,37,Female,Asian,5,33.0,28.0,1
+PAT_0041,SLE,31,Female,Caucasian,5,53.0,48.0,1
+PAT_0042,SjD,58,Female,Caucasian,4,30.0,26.0,1
+PAT_0043,Control,54,Female,African American,2,,,0
+PAT_0044,SLE,29,Female,Caucasian,1,50.0,49.0,1
+PAT_0045,Control,42,Female,African American,4,,,0
+PAT_0046,Control,36,Female,Caucasian,2,,,0
+PAT_0047,SLE,48,Female,Caucasian,1,19.0,18.0,0
+PAT_0048,SLE,30,Male,Caucasian,2,28.0,26.0,1
+PAT_0049,SLE,37,Female,Caucasian,2,22.0,20.0,0
+PAT_0050,SjD,56,Female,Caucasian,5,24.0,19.0,0
+PAT_0051,Control,30,Female,Hispanic,2,,,0
+PAT_0052,SjD,55,Male,Hispanic,5,46.0,41.0,1
+PAT_0053,SLE,27,Female,Caucasian,1,4.0,3.0,0
+PAT_0054,Control,50,Female,Asian,5,,,0
+PAT_0055,SjD,40,Male,Hispanic,2,22.0,20.0,0
+PAT_0056,Control,59,Female,Other,1,,,0
+PAT_0057,SLE,36,Male,Hispanic,1,45.0,44.0,1
+PAT_0058,Control,31,Female,Caucasian,5,,,0
+PAT_0059,SLE,49,Female,Caucasian,3,47.0,44.0,1
+PAT_0060,SjD,44,Female,Caucasian,2,32.0,30.0,1
+PAT_0061,SLE,29,Female,Caucasian,3,22.0,19.0,0
+PAT_0062,Control,42,Female,Caucasian,3,,,0
+PAT_0063,SjD,39,Female,Asian,1,14.0,13.0,0
+PAT_0064,Control,47,Female,African American,1,,,0
+PAT_0065,SLE,29,Female,Hispanic,4,31.0,27.0,1
+PAT_0066,SjD,57,Female,Caucasian,4,52.0,48.0,1
+PAT_0067,SjD,44,Female,Hispanic,3,39.0,36.0,1
+PAT_0068,Control,47,Male,Hispanic,4,,,0
+PAT_0069,SLE,42,Female,Caucasian,2,23.0,21.0,0
+PAT_0070,SjD,45,Female,Caucasian,3,20.0,17.0,0
+PAT_0071,Control,38,Female,Caucasian,1,,,0
+PAT_0072,SjD,59,Male,Hispanic,3,18.0,15.0,0
+PAT_0073,SjD,37,Female,Caucasian,3,6.0,3.0,0
+PAT_0074,SLE,26,Female,African American,4,50.0,46.0,1
+PAT_0075,Control,48,Female,Caucasian,2,,,0
+PAT_0076,SLE,28,Female,Hispanic,2,22.0,20.0,0
+PAT_0077,SLE,24,Female,Caucasian,0,44.0,44.0,1
+PAT_0078,SjD,46,Female,Other,2,55.0,53.0,1
+PAT_0079,Control,48,Male,Hispanic,5,,,0
+PAT_0080,SjD,34,Female,Caucasian,1,40.0,39.0,1
+PAT_0081,SjD,39,Female,Caucasian,1,42.0,41.0,1
+PAT_0082,SLE,28,Female,Caucasian,0,47.0,47.0,1
+PAT_0083,Control,21,Male,Caucasian,4,,,0
+PAT_0084,Control,64,Female,African American,3,,,0
+PAT_0085,SjD,46,Female,Caucasian,3,56.0,53.0,1
+PAT_0086,Control,47,Female,Asian,5,,,0
+PAT_0087,Control,29,Male,Caucasian,0,,,0
+PAT_0088,SLE,39,Female,Caucasian,4,9.0,5.0,0
+PAT_0089,SjD,50,Female,Caucasian,5,51.0,46.0,1
+PAT_0090,SjD,37,Male,Hispanic,0,42.0,42.0,1
+PAT_0091,Control,43,Female,Caucasian,1,,,0
+PAT_0092,Control,66,Female,Caucasian,0,,,0
+PAT_0093,SLE,18,Male,Caucasian,5,53.0,48.0,1
+PAT_0094,SjD,30,Female,Caucasian,2,54.0,52.0,1
+PAT_0095,SjD,50,Female,African American,3,7.0,4.0,0
+PAT_0096,SjD,53,Male,Other,3,49.0,46.0,1
+PAT_0097,SLE,30,Male,Caucasian,4,54.0,50.0,1
+PAT_0098,SjD,53,Female,Asian,0,40.0,40.0,1
+PAT_0099,SLE,35,Female,Caucasian,3,15.0,12.0,0
+PAT_0100,SjD,55,Female,Caucasian,4,20.0,16.0,0
+PAT_0101,Control,47,Female,Caucasian,1,,,0
+PAT_0102,SLE,28,Female,African American,2,43.0,41.0,1
+PAT_0103,SLE,30,Female,Caucasian,3,43.0,40.0,1
+PAT_0104,Control,49,Male,Hispanic,4,,,0
+PAT_0105,Control,23,Female,Caucasian,4,,,0
+PAT_0106,SLE,25,Female,Hispanic,2,33.0,31.0,1
+PAT_0107,SLE,26,Female,Caucasian,0,15.0,15.0,0
+PAT_0108,SLE,34,Male,Caucasian,0,49.0,49.0,1
+PAT_0109,SjD,34,Female,African American,2,30.0,28.0,1
+PAT_0110,SjD,61,Female,African American,4,20.0,16.0,0
+PAT_0111,Control,35,Female,Caucasian,5,,,0
+PAT_0112,Control,49,Female,Caucasian,3,,,0
+PAT_0113,SjD,65,Male,Caucasian,2,32.0,30.0,1
+PAT_0114,SLE,39,Female,Caucasian,3,19.0,16.0,0
+PAT_0115,Control,38,Female,Caucasian,4,,,0
+PAT_0116,SjD,56,Female,Other,4,25.0,21.0,0
+PAT_0117,SLE,24,Female,Hispanic,5,41.0,36.0,1
+PAT_0118,Control,55,Female,Caucasian,0,,,0
+PAT_0119,SjD,22,Female,Hispanic,0,46.0,46.0,1
+PAT_0120,Control,68,Female,Caucasian,5,,,0
+PAT_0121,SLE,41,Female,Caucasian,5,36.0,31.0,1
+PAT_0122,SjD,49,Female,Caucasian,3,28.0,25.0,1
+PAT_0123,SLE,28,Female,Hispanic,0,40.0,40.0,1
+PAT_0124,SLE,27,Male,Caucasian,4,17.0,13.0,0
+PAT_0125,SjD,18,Female,African American,1,17.0,16.0,0
+PAT_0126,SLE,32,Female,Caucasian,5,50.0,45.0,1
+PAT_0127,SLE,30,Female,African American,0,8.0,8.0,0
+PAT_0128,Control,32,Female,African American,2,,,0
+PAT_0129,Control,49,Female,African American,5,,,0
+PAT_0130,Control,42,Female,Hispanic,3,,,0
+PAT_0131,Control,18,Female,Caucasian,2,,,0
+PAT_0132,SLE,29,Female,Caucasian,4,14.0,10.0,0
+PAT_0133,Control,31,Female,Other,3,,,0
+PAT_0134,SLE,34,Female,Caucasian,3,25.0,22.0,0
+PAT_0135,Control,43,Male,Caucasian,1,,,0
+PAT_0136,SjD,41,Female,Caucasian,2,21.0,19.0,0
+PAT_0137,SjD,37,Female,Caucasian,3,47.0,44.0,1
+PAT_0138,SjD,69,Female,Caucasian,4,45.0,41.0,1
+PAT_0139,Control,45,Female,Caucasian,5,,,0
+PAT_0140,SjD,50,Female,Caucasian,1,41.0,40.0,1
+PAT_0141,Control,49,Male,Caucasian,4,,,0
+PAT_0142,Control,48,Female,Caucasian,2,,,0
+PAT_0143,SjD,48,Female,Caucasian,1,52.0,51.0,1
+PAT_0144,SLE,26,Female,Hispanic,1,29.0,28.0,1
+PAT_0145,SLE,34,Female,Caucasian,0,4.0,4.0,0
+PAT_0146,SjD,34,Female,Hispanic,4,15.0,11.0,0
+PAT_0147,SLE,20,Female,Caucasian,3,46.0,43.0,1
+PAT_0148,SLE,22,Male,Hispanic,2,8.0,6.0,0
+PAT_0149,SLE,39,Female,Asian,5,11.0,6.0,0
+PAT_0150,Control,53,Male,African American,4,,,0
+PAT_0151,SLE,41,Female,Caucasian,2,20.0,18.0,0
+PAT_0152,SLE,44,Female,Asian,0,45.0,45.0,1
+PAT_0153,SjD,42,Female,Caucasian,0,26.0,26.0,1
+PAT_0154,SjD,65,Female,Caucasian,3,37.0,34.0,1
+PAT_0155,SLE,32,Female,Asian,3,21.0,18.0,0
+PAT_0156,SLE,45,Female,Caucasian,1,24.0,23.0,0
+PAT_0157,Control,59,Male,Hispanic,2,,,0
+PAT_0158,SjD,34,Female,Asian,0,32.0,32.0,1
+PAT_0159,SjD,47,Female,Caucasian,5,25.0,20.0,0
+PAT_0160,Control,43,Female,Hispanic,2,,,0
+PAT_0161,Control,24,Female,Caucasian,5,,,0
+PAT_0162,Control,37,Female,Hispanic,1,,,0
+PAT_0163,SLE,45,Female,Caucasian,3,7.0,4.0,0
+PAT_0164,Control,40,Male,Caucasian,2,,,0
+PAT_0165,SjD,39,Female,African American,1,49.0,48.0,1
+PAT_0166,Control,44,Female,Caucasian,5,,,0
+PAT_0167,SLE,25,Female,Caucasian,5,56.0,51.0,1
+PAT_0168,SLE,42,Female,Hispanic,1,45.0,44.0,1
+PAT_0169,SLE,19,Female,Caucasian,5,37.0,32.0,1
+PAT_0170,Control,41,Female,African American,5,,,0
+PAT_0171,SLE,31,Female,Asian,1,35.0,34.0,1
+PAT_0172,SjD,42,Male,Caucasian,2,12.0,10.0,0
+PAT_0173,SLE,26,Female,African American,5,9.0,4.0,0
+PAT_0174,Control,57,Female,Caucasian,4,,,0
+PAT_0175,SLE,41,Female,Caucasian,2,19.0,17.0,0
+PAT_0176,SjD,40,Female,Caucasian,1,37.0,36.0,1
+PAT_0177,SLE,36,Female,African American,2,25.0,23.0,0
+PAT_0178,SjD,65,Female,Hispanic,0,37.0,37.0,1
+PAT_0179,SjD,34,Female,Caucasian,1,33.0,32.0,1
+PAT_0180,SLE,38,Female,Caucasian,0,15.0,15.0,0
+PAT_0181,Control,31,Female,Caucasian,2,,,0
+PAT_0182,Control,33,Male,Asian,4,,,0
+PAT_0183,SjD,64,Female,Caucasian,4,38.0,34.0,1
+PAT_0184,SLE,32,Female,Hispanic,3,24.0,21.0,0
+PAT_0185,Control,35,Female,Caucasian,4,,,0
+PAT_0186,SjD,42,Female,Caucasian,3,16.0,13.0,0
+PAT_0187,Control,52,Female,African American,0,,,0
+PAT_0188,SjD,61,Female,Caucasian,0,19.0,19.0,0
+PAT_0189,SjD,43,Female,Caucasian,2,6.0,4.0,0
+PAT_0190,Control,39,Male,Caucasian,3,,,0
+PAT_0191,Control,44,Female,Caucasian,5,,,0
+PAT_0192,SjD,46,Female,Caucasian,3,32.0,29.0,1
+PAT_0193,Control,47,Female,Hispanic,4,,,0
+PAT_0194,Control,37,Female,Hispanic,3,,,0
+PAT_0195,SjD,43,Female,Caucasian,1,20.0,19.0,0
+PAT_0196,SjD,48,Male,Caucasian,3,13.0,10.0,0
+PAT_0197,Control,59,Female,Caucasian,4,,,0
+PAT_0198,Control,37,Male,Caucasian,0,,,0
+PAT_0199,SjD,48,Male,Hispanic,4,43.0,39.0,1
+PAT_0200,Control,75,Female,Hispanic,5,,,0
+PAT_0201,SjD,56,Female,Caucasian,0,17.0,17.0,0
+PAT_0202,SjD,43,Female,Hispanic,3,44.0,41.0,1
+PAT_0203,SjD,48,Female,Caucasian,1,19.0,18.0,0
+PAT_0204,Control,47,Female,Caucasian,4,,,0
+PAT_0205,SLE,31,Female,Caucasian,4,22.0,18.0,0
+PAT_0206,Control,47,Male,African American,1,,,0
+PAT_0207,SjD,55,Male,Caucasian,4,20.0,16.0,0
+PAT_0208,SLE,37,Female,Caucasian,2,10.0,8.0,0
+PAT_0209,SjD,55,Female,Hispanic,2,34.0,32.0,1
+PAT_0210,Control,48,Male,Hispanic,2,,,0
+PAT_0211,SjD,21,Female,African American,5,24.0,19.0,0
+PAT_0212,Control,55,Female,Caucasian,1,,,0
+PAT_0213,SLE,58,Female,Asian,2,36.0,34.0,1
+PAT_0214,Control,49,Female,Caucasian,0,,,0
+PAT_0215,Control,54,Female,Caucasian,2,,,0
+PAT_0216,SjD,50,Female,Asian,1,37.0,36.0,1
+PAT_0217,Control,45,Female,Hispanic,0,,,0
+PAT_0218,SLE,38,Female,African American,3,47.0,44.0,1
+PAT_0219,SLE,34,Female,Caucasian,4,45.0,41.0,1
+PAT_0220,SLE,30,Female,Caucasian,0,3.0,3.0,0
+PAT_0221,SLE,34,Male,Hispanic,2,29.0,27.0,1
+PAT_0222,Control,37,Female,Hispanic,1,,,0
+PAT_0223,SLE,22,Female,African American,2,38.0,36.0,1
+PAT_0224,SjD,50,Female,Hispanic,3,46.0,43.0,1
+PAT_0225,SLE,28,Female,Caucasian,5,10.0,5.0,0
+PAT_0226,Control,68,Female,Hispanic,4,,,0
+PAT_0227,Control,34,Male,Caucasian,0,,,0
+PAT_0228,SjD,40,Female,Caucasian,3,22.0,19.0,0
+PAT_0229,SjD,54,Female,Caucasian,3,33.0,30.0,1
+PAT_0230,SjD,60,Female,African American,2,43.0,41.0,1
+PAT_0231,SLE,41,Female,African American,4,45.0,41.0,1
+PAT_0232,SjD,65,Female,Caucasian,4,40.0,36.0,1
+PAT_0233,Control,27,Female,Hispanic,0,,,0
+PAT_0234,SjD,59,Female,Caucasian,3,49.0,46.0,1
+PAT_0235,Control,54,Female,Caucasian,4,,,0
+PAT_0236,SjD,40,Female,Caucasian,5,45.0,40.0,1
+PAT_0237,SjD,38,Female,Caucasian,5,54.0,49.0,1
+PAT_0238,Control,40,Female,Caucasian,5,,,0
+PAT_0239,SLE,37,Female,Caucasian,2,17.0,15.0,0
+PAT_0240,SjD,42,Female,Asian,0,21.0,21.0,0
+PAT_0241,SLE,42,Female,Hispanic,5,48.0,43.0,1
+PAT_0242,SjD,49,Female,Caucasian,0,23.0,23.0,0
+PAT_0243,SjD,41,Female,African American,0,23.0,23.0,0
+PAT_0244,SjD,43,Female,Caucasian,3,46.0,43.0,1
+PAT_0245,SjD,38,Male,Caucasian,1,27.0,26.0,1
+PAT_0246,Control,49,Male,Caucasian,2,,,0
+PAT_0247,SjD,41,Female,Caucasian,0,39.0,39.0,1
+PAT_0248,SjD,39,Female,Caucasian,3,29.0,26.0,1
+PAT_0249,SLE,40,Female,Asian,3,22.0,19.0,0
+PAT_0250,SLE,32,Female,Caucasian,2,39.0,37.0,1
+PAT_0251,SjD,46,Female,Caucasian,0,53.0,53.0,1
+PAT_0252,SjD,55,Female,Caucasian,3,32.0,29.0,1
+PAT_0253,Control,45,Female,Other,3,,,0
+PAT_0254,SLE,28,Female,Caucasian,5,16.0,11.0,0
+PAT_0255,Control,41,Male,Hispanic,0,,,0
+PAT_0256,SLE,21,Female,Caucasian,2,33.0,31.0,1
+PAT_0257,Control,24,Male,Caucasian,3,,,0
+PAT_0258,SjD,18,Female,African American,0,22.0,22.0,0
+PAT_0259,Control,32,Female,Asian,4,,,0
+PAT_0260,SLE,37,Female,Caucasian,3,44.0,41.0,1
+PAT_0261,Control,37,Male,Asian,0,,,0
+PAT_0262,SLE,27,Female,Hispanic,4,25.0,21.0,0
+PAT_0263,SjD,51,Male,Caucasian,0,4.0,4.0,0
+PAT_0264,SjD,52,Female,Caucasian,3,48.0,45.0,1
+PAT_0265,SLE,24,Female,Caucasian,3,18.0,15.0,0
+PAT_0266,SLE,24,Female,Caucasian,5,32.0,27.0,1
+PAT_0267,SjD,34,Female,Hispanic,3,9.0,6.0,0
+PAT_0268,SjD,51,Female,African American,5,13.0,8.0,0
+PAT_0269,Control,43,Female,Caucasian,5,,,0
+PAT_0270,SjD,56,Female,Hispanic,1,33.0,32.0,1
+PAT_0271,SjD,50,Female,Caucasian,2,42.0,40.0,1
+PAT_0272,SLE,28,Female,Caucasian,0,4.0,4.0,0
+PAT_0273,Control,52,Female,Hispanic,0,,,0
+PAT_0274,SjD,54,Female,Caucasian,1,26.0,25.0,1
+PAT_0275,SLE,18,Female,Caucasian,0,6.0,6.0,0
+PAT_0276,SjD,31,Female,Caucasian,3,51.0,48.0,1
+PAT_0277,SjD,47,Female,Caucasian,0,25.0,25.0,1
+PAT_0278,SLE,20,Female,Caucasian,0,11.0,11.0,0
+PAT_0279,SLE,43,Female,Caucasian,2,37.0,35.0,1
+PAT_0280,SjD,55,Female,Caucasian,3,43.0,40.0,1
+PAT_0281,Control,48,Female,Caucasian,3,,,0
+PAT_0282,SLE,29,Female,Caucasian,3,6.0,3.0,0
+PAT_0283,SjD,24,Female,Asian,3,20.0,17.0,0
+PAT_0284,SjD,33,Female,Caucasian,0,13.0,13.0,0
+PAT_0285,SjD,50,Female,Hispanic,2,46.0,44.0,1
+PAT_0286,SjD,62,Female,Hispanic,3,8.0,5.0,0
+PAT_0287,SLE,18,Female,Caucasian,2,43.0,41.0,1
+PAT_0288,SjD,50,Male,African American,4,46.0,42.0,1
+PAT_0289,Control,46,Male,Caucasian,2,,,0
+PAT_0290,SLE,35,Female,Caucasian,3,9.0,6.0,0
+PAT_0291,Control,26,Male,Asian,5,,,0
+PAT_0292,SLE,32,Female,African American,0,43.0,43.0,1
+PAT_0293,SLE,18,Female,Caucasian,3,11.0,8.0,0
+PAT_0294,SjD,51,Female,Hispanic,0,44.0,44.0,1
+PAT_0295,SLE,35,Female,Asian,3,29.0,26.0,1
+PAT_0296,SLE,42,Female,Hispanic,4,43.0,39.0,1
+PAT_0297,Control,50,Female,Caucasian,2,,,0
+PAT_0298,Control,62,Female,Caucasian,1,,,0
+PAT_0299,SLE,32,Female,Caucasian,2,35.0,33.0,1
+PAT_0300,Control,43,Female,Hispanic,4,,,0
+PAT_0301,Control,43,Female,Hispanic,4,,,0
+PAT_0302,Control,40,Female,Caucasian,0,,,0
+PAT_0303,SjD,67,Female,Hispanic,0,35.0,35.0,1
+PAT_0304,SjD,48,Female,Caucasian,4,46.0,42.0,1
+PAT_0305,SjD,52,Female,Caucasian,0,11.0,11.0,0
+PAT_0306,Control,46,Female,Caucasian,4,,,0
+PAT_0307,Control,45,Female,Hispanic,2,,,0
+PAT_0308,Control,42,Male,African American,3,,,0
+PAT_0309,SLE,23,Female,Caucasian,5,9.0,4.0,0
+PAT_0310,Control,41,Male,Other,0,,,0
+PAT_0311,SLE,21,Female,Caucasian,3,16.0,13.0,0
+PAT_0312,SjD,45,Female,Caucasian,5,24.0,19.0,0
+PAT_0313,Control,39,Male,African American,5,,,0
+PAT_0314,Control,36,Female,African American,0,,,0
+PAT_0315,SLE,36,Female,Caucasian,5,33.0,28.0,1
+PAT_0316,SjD,53,Female,African American,5,54.0,49.0,1
+PAT_0317,SLE,35,Female,Caucasian,3,20.0,17.0,0
+PAT_0318,Control,31,Male,Hispanic,3,,,0
+PAT_0319,SjD,53,Female,African American,2,35.0,33.0,1
+PAT_0320,SjD,41,Female,Caucasian,3,38.0,35.0,1
+PAT_0321,SLE,41,Female,Asian,5,43.0,38.0,1
+PAT_0322,SLE,37,Female,Other,0,9.0,9.0,0
+PAT_0323,Control,40,Female,Hispanic,3,,,0
+PAT_0324,SjD,33,Female,Caucasian,4,48.0,44.0,1
+PAT_0325,SLE,29,Female,African American,2,31.0,29.0,1
+PAT_0326,SjD,50,Male,Caucasian,3,52.0,49.0,1
+PAT_0327,SLE,31,Female,Caucasian,1,52.0,51.0,1
+PAT_0328,Control,36,Male,Caucasian,1,,,0
+PAT_0329,SjD,51,Female,Other,2,13.0,11.0,0
+PAT_0330,Control,40,Female,Caucasian,0,,,0
+PAT_0331,Control,42,Female,Caucasian,5,,,0
+PAT_0332,SjD,53,Female,African American,3,37.0,34.0,1
+PAT_0333,SjD,44,Female,Caucasian,0,31.0,31.0,1
+PAT_0334,SLE,35,Female,African American,3,6.0,3.0,0
+PAT_0335,SjD,41,Female,African American,3,48.0,45.0,1
+PAT_0336,Control,41,Male,Caucasian,4,,,0
+PAT_0337,Control,38,Female,Caucasian,2,,,0
+PAT_0338,Control,50,Female,Caucasian,3,,,0
+PAT_0339,Control,27,Female,African American,5,,,0
+PAT_0340,SjD,40,Female,African American,5,9.0,4.0,0
+PAT_0341,Control,49,Female,Caucasian,4,,,0
+PAT_0342,SjD,55,Female,African American,1,6.0,5.0,0
+PAT_0343,SLE,18,Female,Caucasian,4,50.0,46.0,1
+PAT_0344,SLE,32,Female,Caucasian,3,15.0,12.0,0
+PAT_0345,SLE,29,Female,Caucasian,5,28.0,23.0,0
+PAT_0346,Control,32,Male,Caucasian,5,,,0
+PAT_0347,Control,54,Male,African American,1,,,0
+PAT_0348,SjD,51,Female,African American,5,14.0,9.0,0
+PAT_0349,SjD,39,Female,Caucasian,3,26.0,23.0,0
+PAT_0350,SjD,47,Female,Hispanic,5,14.0,9.0,0
+PAT_0351,SjD,47,Female,Caucasian,2,5.0,3.0,0
+PAT_0352,Control,32,Female,Caucasian,4,,,0
+PAT_0353,Control,47,Female,Caucasian,4,,,0
+PAT_0354,SjD,36,Male,Caucasian,3,38.0,35.0,1
+PAT_0355,SLE,30,Female,Asian,2,55.0,53.0,1
+PAT_0356,SjD,31,Female,Caucasian,3,44.0,41.0,1
+PAT_0357,SjD,46,Female,Caucasian,3,24.0,21.0,0
+PAT_0358,Control,24,Female,Caucasian,0,,,0
+PAT_0359,Control,57,Male,Caucasian,1,,,0
+PAT_0360,Control,49,Female,Caucasian,2,,,0
+PAT_0361,SjD,48,Female,Other,4,15.0,11.0,0
+PAT_0362,SLE,36,Female,African American,5,15.0,10.0,0
+PAT_0363,SLE,43,Male,Caucasian,4,49.0,45.0,1
+PAT_0364,SjD,34,Female,Caucasian,5,46.0,41.0,1
+PAT_0365,SjD,57,Female,Caucasian,3,22.0,19.0,0
+PAT_0366,SjD,52,Female,Caucasian,5,21.0,16.0,0
+PAT_0367,SLE,36,Female,Caucasian,5,26.0,21.0,0
+PAT_0368,SjD,37,Female,African American,3,41.0,38.0,1
+PAT_0369,Control,18,Male,African American,2,,,0
+PAT_0370,SjD,62,Female,African American,4,57.0,53.0,1
+PAT_0371,SjD,48,Female,Caucasian,4,27.0,23.0,0
+PAT_0372,SjD,58,Female,Caucasian,3,26.0,23.0,0
+PAT_0373,Control,38,Female,Caucasian,4,,,0
+PAT_0374,SjD,45,Female,Caucasian,2,32.0,30.0,1
+PAT_0375,Control,37,Female,Caucasian,2,,,0
+PAT_0376,Control,34,Male,African American,2,,,0
+PAT_0377,Control,36,Female,African American,4,,,0
+PAT_0378,SLE,35,Female,Caucasian,2,42.0,40.0,1
+PAT_0379,SjD,54,Female,Asian,3,19.0,16.0,0
+PAT_0380,SLE,31,Female,Caucasian,2,28.0,26.0,1
+PAT_0381,Control,26,Female,Caucasian,2,,,0
+PAT_0382,Control,34,Male,Caucasian,2,,,0
+PAT_0383,SLE,27,Male,African American,0,9.0,9.0,0
+PAT_0384,Control,57,Female,African American,2,,,0
+PAT_0385,Control,65,Female,African American,4,,,0
+PAT_0386,SLE,19,Female,Hispanic,0,9.0,9.0,0
+PAT_0387,SjD,48,Female,Hispanic,3,8.0,5.0,0
+PAT_0388,Control,37,Male,Caucasian,1,,,0
+PAT_0389,SjD,42,Female,Asian,3,49.0,46.0,1
+PAT_0390,Control,55,Female,Caucasian,2,,,0
+PAT_0391,Control,38,Female,Other,2,,,0
+PAT_0392,SLE,33,Female,African American,3,48.0,45.0,1
+PAT_0393,SLE,18,Female,African American,4,24.0,20.0,0
+PAT_0394,SLE,27,Male,Caucasian,5,53.0,48.0,1
+PAT_0395,SLE,26,Female,Hispanic,4,26.0,22.0,0
+PAT_0396,SLE,18,Female,African American,3,56.0,53.0,1
+PAT_0397,SjD,62,Male,Hispanic,0,7.0,7.0,0
+PAT_0398,Control,64,Female,Caucasian,3,,,0
+PAT_0399,SjD,41,Female,Hispanic,4,9.0,5.0,0
+PAT_0400,SjD,38,Female,Caucasian,2,33.0,31.0,1
+PAT_0401,Control,40,Male,African American,4,,,0
+PAT_0402,SLE,37,Female,Caucasian,5,19.0,14.0,0
+PAT_0403,SLE,39,Male,African American,2,15.0,13.0,0
+PAT_0404,SjD,45,Female,African American,4,47.0,43.0,1
+PAT_0405,SLE,31,Female,Caucasian,2,40.0,38.0,1
+PAT_0406,SLE,31,Female,Other,5,8.0,3.0,0
+PAT_0407,Control,39,Female,Hispanic,4,,,0
+PAT_0408,SjD,35,Female,Caucasian,4,11.0,7.0,0
+PAT_0409,SLE,18,Female,Asian,2,19.0,17.0,0
+PAT_0410,SjD,32,Male,Caucasian,4,30.0,26.0,1
+PAT_0411,SLE,29,Female,Caucasian,5,55.0,50.0,1
+PAT_0412,SjD,40,Female,Caucasian,3,47.0,44.0,1
+PAT_0413,SLE,32,Female,African American,4,8.0,4.0,0
+PAT_0414,SjD,44,Female,African American,5,46.0,41.0,1
+PAT_0415,SjD,48,Female,African American,4,53.0,49.0,1
+PAT_0416,SLE,29,Male,Caucasian,3,20.0,17.0,0
+PAT_0417,SLE,18,Female,Caucasian,4,22.0,18.0,0
+PAT_0418,SLE,32,Female,Caucasian,1,35.0,34.0,1
+PAT_0419,Control,44,Female,Caucasian,0,,,0
+PAT_0420,SLE,29,Male,Caucasian,3,40.0,37.0,1
+PAT_0421,SLE,47,Female,Caucasian,5,10.0,5.0,0
+PAT_0422,SjD,46,Female,Caucasian,4,15.0,11.0,0
+PAT_0423,SjD,50,Female,Other,1,36.0,35.0,1
+PAT_0424,SjD,47,Female,Caucasian,5,26.0,21.0,0
+PAT_0425,SLE,38,Female,African American,1,41.0,40.0,1
+PAT_0426,SjD,52,Female,African American,5,34.0,29.0,1
+PAT_0427,SLE,41,Female,Caucasian,3,36.0,33.0,1
+PAT_0428,Control,39,Male,Hispanic,0,,,0
+PAT_0429,SLE,27,Female,Caucasian,0,8.0,8.0,0
+PAT_0430,SjD,60,Female,Caucasian,3,37.0,34.0,1
+PAT_0431,Control,38,Female,African American,4,,,0
+PAT_0432,SLE,21,Female,Caucasian,1,11.0,10.0,0
+PAT_0433,Control,43,Female,Caucasian,3,,,0
+PAT_0434,SLE,25,Female,African American,4,48.0,44.0,1
+PAT_0435,SLE,37,Female,African American,0,42.0,42.0,1
+PAT_0436,Control,38,Female,Caucasian,5,,,0
+PAT_0437,Control,43,Female,African American,4,,,0
+PAT_0438,Control,40,Male,Caucasian,1,,,0
+PAT_0439,SLE,31,Female,African American,4,41.0,37.0,1
+PAT_0440,SLE,31,Female,Caucasian,1,50.0,49.0,1
+PAT_0441,Control,49,Male,Caucasian,5,,,0
+PAT_0442,SLE,43,Female,Caucasian,0,20.0,20.0,0
+PAT_0443,Control,30,Female,Caucasian,1,,,0
+PAT_0444,SLE,28,Female,Caucasian,4,48.0,44.0,1
+PAT_0445,Control,46,Female,Caucasian,3,,,0
+PAT_0446,SLE,24,Female,Caucasian,5,14.0,9.0,0
+PAT_0447,SjD,44,Female,Asian,2,53.0,51.0,1
+PAT_0448,Control,40,Female,African American,4,,,0
+PAT_0449,SjD,39,Female,African American,1,31.0,30.0,1
+PAT_0450,SLE,31,Female,Caucasian,4,31.0,27.0,1
+PAT_0451,Control,51,Female,Caucasian,0,,,0
+PAT_0452,Control,37,Male,Hispanic,4,,,0
+PAT_0453,Control,48,Female,Hispanic,2,,,0
+PAT_0454,Control,29,Female,African American,0,,,0
+PAT_0455,Control,39,Male,Hispanic,5,,,0
+PAT_0456,Control,68,Female,Caucasian,2,,,0
+PAT_0457,SjD,54,Female,Caucasian,3,49.0,46.0,1
+PAT_0458,SLE,28,Female,Other,0,20.0,20.0,0
+PAT_0459,Control,31,Female,Caucasian,3,,,0
+PAT_0460,SLE,31,Female,Caucasian,0,49.0,49.0,1
+PAT_0461,SjD,41,Female,Caucasian,5,31.0,26.0,1
+PAT_0462,SjD,33,Female,Caucasian,5,50.0,45.0,1
+PAT_0463,Control,60,Female,Caucasian,1,,,0
+PAT_0464,SLE,37,Female,Hispanic,1,53.0,52.0,1
+PAT_0465,SjD,33,Female,African American,4,9.0,5.0,0
+PAT_0466,SjD,43,Female,Caucasian,2,22.0,20.0,0
+PAT_0467,Control,48,Male,African American,0,,,0
+PAT_0468,SjD,42,Female,Caucasian,5,28.0,23.0,0
+PAT_0469,SjD,41,Female,Caucasian,0,9.0,9.0,0
+PAT_0470,SjD,55,Female,Asian,1,48.0,47.0,1
+PAT_0471,SLE,28,Female,Caucasian,0,48.0,48.0,1
+PAT_0472,SjD,51,Female,Caucasian,1,35.0,34.0,1
+PAT_0473,SLE,34,Male,Other,0,53.0,53.0,1
+PAT_0474,SjD,36,Female,Asian,3,8.0,5.0,0
+PAT_0475,SjD,47,Male,Caucasian,5,16.0,11.0,0
+PAT_0476,SjD,64,Female,Other,5,31.0,26.0,1
+PAT_0477,Control,38,Female,Caucasian,5,,,0
+PAT_0478,Control,39,Female,Caucasian,5,,,0
+PAT_0479,Control,49,Female,Caucasian,0,,,0
+PAT_0480,SjD,47,Female,Asian,0,45.0,45.0,1
+PAT_0481,SjD,53,Female,African American,3,28.0,25.0,1
+PAT_0482,Control,28,Female,Asian,3,,,0
+PAT_0483,SLE,19,Female,Hispanic,1,37.0,36.0,1
+PAT_0484,Control,66,Female,Caucasian,1,,,0
+PAT_0485,SLE,31,Female,Caucasian,2,46.0,44.0,1
+PAT_0486,SLE,49,Male,Hispanic,2,10.0,8.0,0
+PAT_0487,SjD,44,Female,Hispanic,1,5.0,4.0,0
+PAT_0488,Control,68,Female,Caucasian,3,,,0
+PAT_0489,Control,51,Male,Caucasian,1,,,0
+PAT_0490,SLE,24,Female,Caucasian,5,48.0,43.0,1
+PAT_0491,SLE,41,Female,Caucasian,0,23.0,23.0,0
+PAT_0492,SjD,39,Female,Caucasian,2,24.0,22.0,0
+PAT_0493,Control,47,Male,Asian,5,,,0
+PAT_0494,SLE,29,Female,Caucasian,5,26.0,21.0,0
+PAT_0495,Control,56,Male,Caucasian,5,,,0
+PAT_0496,SLE,40,Female,Caucasian,5,8.0,3.0,0
+PAT_0497,Control,59,Female,Hispanic,1,,,0
+PAT_0498,SjD,58,Female,Hispanic,5,52.0,47.0,1
+PAT_0499,SjD,62,Female,Caucasian,5,48.0,43.0,1
+PAT_0500,SLE,49,Male,Caucasian,0,15.0,15.0,0
+PAT_0501,SLE,35,Female,African American,0,38.0,38.0,1
+PAT_0502,SLE,46,Female,Caucasian,3,14.0,11.0,0
+PAT_0503,SLE,41,Female,African American,3,10.0,7.0,0
+PAT_0504,Control,31,Male,Caucasian,4,,,0
+PAT_0505,SjD,52,Female,Hispanic,3,19.0,16.0,0
+PAT_0506,Control,53,Female,Caucasian,0,,,0
+PAT_0507,SLE,27,Female,Caucasian,4,37.0,33.0,1
+PAT_0508,SjD,47,Female,Caucasian,4,32.0,28.0,1
+PAT_0509,Control,40,Female,Caucasian,4,,,0
+PAT_0510,SjD,43,Female,Caucasian,0,35.0,35.0,1
+PAT_0511,SjD,53,Female,Caucasian,1,32.0,31.0,1
+PAT_0512,SLE,51,Female,Caucasian,3,10.0,7.0,0
+PAT_0513,SLE,33,Female,Caucasian,3,21.0,18.0,0
+PAT_0514,SjD,45,Female,Hispanic,3,49.0,46.0,1
+PAT_0515,Control,54,Male,Hispanic,0,,,0
+PAT_0516,SjD,30,Male,Hispanic,4,54.0,50.0,1
+PAT_0517,SjD,50,Female,Hispanic,1,37.0,36.0,1
+PAT_0518,Control,64,Female,African American,4,,,0
+PAT_0519,SjD,41,Female,Caucasian,1,23.0,22.0,0
+PAT_0520,SLE,27,Female,Caucasian,1,8.0,7.0,0
+PAT_0521,SjD,42,Male,Caucasian,0,46.0,46.0,1
+PAT_0522,Control,33,Female,African American,2,,,0
+PAT_0523,SjD,47,Female,Caucasian,2,21.0,19.0,0
+PAT_0524,SLE,35,Female,Caucasian,5,25.0,20.0,0
+PAT_0525,Control,36,Female,Caucasian,4,,,0
+PAT_0526,Control,22,Male,Caucasian,1,,,0
+PAT_0527,SLE,27,Female,Other,0,26.0,26.0,1
+PAT_0528,Control,40,Female,Caucasian,0,,,0
+PAT_0529,Control,49,Female,African American,1,,,0
+PAT_0530,Control,49,Female,Caucasian,2,,,0
+PAT_0531,SLE,40,Female,African American,1,35.0,34.0,1
+PAT_0532,SjD,52,Female,African American,3,44.0,41.0,1
+PAT_0533,SLE,34,Female,African American,2,19.0,17.0,0
+PAT_0534,SLE,30,Female,Caucasian,4,44.0,40.0,1
+PAT_0535,Control,51,Female,Caucasian,5,,,0
+PAT_0536,SLE,24,Female,African American,3,36.0,33.0,1
+PAT_0537,Control,43,Female,Caucasian,1,,,0
+PAT_0538,SjD,46,Female,Caucasian,0,32.0,32.0,1
+PAT_0539,SjD,50,Female,Caucasian,5,53.0,48.0,1
+PAT_0540,SLE,27,Female,Caucasian,1,49.0,48.0,1
+PAT_0541,SjD,66,Female,Caucasian,2,11.0,9.0,0
+PAT_0542,SLE,36,Male,Hispanic,3,36.0,33.0,1
+PAT_0543,SLE,31,Female,Caucasian,5,25.0,20.0,0
+PAT_0544,Control,50,Female,Asian,3,,,0
+PAT_0545,SjD,54,Female,Caucasian,0,14.0,14.0,0
+PAT_0546,SLE,40,Female,African American,2,27.0,25.0,1
+PAT_0547,SjD,54,Female,Caucasian,1,13.0,12.0,0
+PAT_0548,SjD,28,Female,Hispanic,0,20.0,20.0,0
+PAT_0549,Control,61,Male,Hispanic,2,,,0
+PAT_0550,Control,40,Female,African American,4,,,0
+PAT_0551,SLE,42,Female,African American,5,21.0,16.0,0
+PAT_0552,SjD,56,Female,Hispanic,5,19.0,14.0,0
+PAT_0553,SjD,41,Female,Caucasian,4,45.0,41.0,1
+PAT_0554,SjD,20,Female,African American,3,40.0,37.0,1
+PAT_0555,SjD,43,Female,Asian,2,14.0,12.0,0
+PAT_0556,SLE,30,Female,Caucasian,0,19.0,19.0,0
+PAT_0557,SjD,39,Male,African American,0,18.0,18.0,0
+PAT_0558,SLE,37,Female,African American,5,24.0,19.0,0
+PAT_0559,SLE,23,Male,Hispanic,4,27.0,23.0,0
+PAT_0560,SjD,65,Female,Caucasian,3,31.0,28.0,1
+PAT_0561,SjD,41,Male,Hispanic,3,48.0,45.0,1
+PAT_0562,SLE,42,Female,African American,1,19.0,18.0,0
+PAT_0563,SLE,22,Female,Hispanic,0,22.0,22.0,0
+PAT_0564,SLE,45,Male,Caucasian,3,43.0,40.0,1
+PAT_0565,SLE,40,Female,Caucasian,5,17.0,12.0,0
+PAT_0566,SjD,55,Female,Caucasian,4,56.0,52.0,1
+PAT_0567,SjD,32,Female,Hispanic,3,46.0,43.0,1
+PAT_0568,Control,27,Female,Caucasian,0,,,0
+PAT_0569,SLE,29,Female,African American,0,19.0,19.0,0
+PAT_0570,SjD,48,Female,Caucasian,2,7.0,5.0,0
+PAT_0571,SLE,34,Female,Hispanic,1,27.0,26.0,1
+PAT_0572,SjD,41,Female,Caucasian,4,31.0,27.0,1
+PAT_0573,SLE,42,Female,Asian,5,57.0,52.0,1
+PAT_0574,Control,43,Male,Caucasian,4,,,0
+PAT_0575,SLE,24,Female,African American,3,18.0,15.0,0
+PAT_0576,SjD,32,Female,African American,4,13.0,9.0,0
+PAT_0577,Control,60,Female,Caucasian,1,,,0
+PAT_0578,SjD,52,Female,Caucasian,4,26.0,22.0,0
+PAT_0579,Control,45,Male,Caucasian,3,,,0
+PAT_0580,SLE,24,Female,Hispanic,5,42.0,37.0,1
+PAT_0581,Control,47,Female,African American,0,,,0
+PAT_0582,SLE,31,Female,Caucasian,3,54.0,51.0,1
+PAT_0583,SLE,28,Female,African American,0,11.0,11.0,0
+PAT_0584,SLE,18,Female,Caucasian,1,45.0,44.0,1
+PAT_0585,SjD,49,Male,Caucasian,1,17.0,16.0,0
+PAT_0586,SjD,40,Female,African American,1,8.0,7.0,0
+PAT_0587,SjD,25,Female,Asian,2,51.0,49.0,1
+PAT_0588,SjD,60,Female,Caucasian,0,25.0,25.0,1
+PAT_0589,SLE,36,Female,Caucasian,5,9.0,4.0,0
+PAT_0590,SLE,24,Male,Hispanic,1,16.0,15.0,0
+PAT_0591,Control,46,Male,Hispanic,4,,,0
+PAT_0592,SLE,18,Female,Hispanic,1,6.0,5.0,0
+PAT_0593,SLE,21,Female,Caucasian,3,55.0,52.0,1
+PAT_0594,SjD,57,Female,Other,5,16.0,11.0,0
+PAT_0595,Control,44,Female,Caucasian,4,,,0
+PAT_0596,SjD,45,Female,Other,5,41.0,36.0,1
+PAT_0597,SLE,26,Female,Caucasian,0,34.0,34.0,1
+PAT_0598,SLE,34,Female,Hispanic,2,34.0,32.0,1
+PAT_0599,Control,48,Male,Hispanic,2,,,0
+PAT_0600,SjD,37,Female,Caucasian,3,48.0,45.0,1
+PAT_0601,SLE,37,Female,Caucasian,5,33.0,28.0,1
+PAT_0602,SjD,51,Female,African American,0,37.0,37.0,1
+PAT_0603,SLE,32,Male,Caucasian,4,32.0,28.0,1
+PAT_0604,SLE,42,Female,Caucasian,4,46.0,42.0,1
+PAT_0605,Control,32,Male,Hispanic,2,,,0
+PAT_0606,SLE,22,Female,Caucasian,0,21.0,21.0,0
+PAT_0607,SjD,46,Female,Caucasian,4,10.0,6.0,0
+PAT_0608,SLE,47,Female,Caucasian,1,33.0,32.0,1
+PAT_0609,SLE,32,Female,Other,3,30.0,27.0,1
+PAT_0610,SjD,64,Male,Caucasian,4,30.0,26.0,1
+PAT_0611,Control,46,Female,Caucasian,5,,,0
+PAT_0612,Control,61,Female,Caucasian,3,,,0
+PAT_0613,SLE,30,Female,Caucasian,2,53.0,51.0,1
+PAT_0614,SLE,22,Female,Caucasian,3,11.0,8.0,0
+PAT_0615,SjD,37,Female,Caucasian,4,46.0,42.0,1
+PAT_0616,SjD,40,Male,Caucasian,5,34.0,29.0,1
+PAT_0617,SLE,32,Female,Caucasian,1,17.0,16.0,0
+PAT_0618,SjD,45,Female,Caucasian,1,22.0,21.0,0
+PAT_0619,SjD,36,Female,Caucasian,2,45.0,43.0,1
+PAT_0620,SLE,27,Female,Caucasian,4,12.0,8.0,0
+PAT_0621,SjD,52,Female,African American,4,12.0,8.0,0
+PAT_0622,SLE,32,Male,African American,4,32.0,28.0,1
+PAT_0623,SLE,35,Female,African American,3,37.0,34.0,1
+PAT_0624,SLE,43,Female,Hispanic,1,36.0,35.0,1
+PAT_0625,Control,37,Female,Caucasian,5,,,0
+PAT_0626,Control,40,Male,African American,1,,,0
+PAT_0627,Control,62,Male,Caucasian,1,,,0
+PAT_0628,SLE,34,Female,African American,1,7.0,6.0,0
+PAT_0629,SLE,24,Female,African American,0,35.0,35.0,1
+PAT_0630,SLE,31,Male,African American,5,9.0,4.0,0
+PAT_0631,SLE,30,Female,Other,5,12.0,7.0,0
+PAT_0632,Control,25,Female,Caucasian,5,,,0
+PAT_0633,Control,56,Female,Caucasian,4,,,0
+PAT_0634,Control,31,Female,Asian,1,,,0
+PAT_0635,SLE,31,Female,Caucasian,4,33.0,29.0,1
+PAT_0636,Control,60,Female,African American,3,,,0
+PAT_0637,SjD,35,Female,Caucasian,4,37.0,33.0,1
+PAT_0638,SjD,48,Female,Caucasian,5,32.0,27.0,1
+PAT_0639,SjD,38,Female,Caucasian,1,37.0,36.0,1
+PAT_0640,SjD,45,Female,Caucasian,3,8.0,5.0,0
+PAT_0641,Control,58,Male,Other,3,,,0
+PAT_0642,SLE,31,Female,Caucasian,1,24.0,23.0,0
+PAT_0643,Control,56,Female,Caucasian,4,,,0
+PAT_0644,Control,30,Female,Hispanic,3,,,0
+PAT_0645,SLE,38,Female,Caucasian,0,18.0,18.0,0
+PAT_0646,Control,48,Female,African American,3,,,0
+PAT_0647,SLE,31,Female,Hispanic,1,26.0,25.0,1
+PAT_0648,Control,62,Female,African American,1,,,0
+PAT_0649,Control,45,Female,Caucasian,5,,,0
+PAT_0650,Control,36,Male,African American,2,,,0
+PAT_0651,Control,58,Male,Caucasian,4,,,0
+PAT_0652,SLE,41,Female,Caucasian,4,54.0,50.0,1
+PAT_0653,SLE,24,Female,Asian,0,32.0,32.0,1
+PAT_0654,Control,67,Female,Caucasian,3,,,0
+PAT_0655,SjD,44,Female,Caucasian,3,16.0,13.0,0
+PAT_0656,Control,30,Female,Caucasian,4,,,0
+PAT_0657,SjD,28,Female,African American,5,12.0,7.0,0
+PAT_0658,SLE,34,Female,Caucasian,2,12.0,10.0,0
+PAT_0659,SjD,43,Female,Caucasian,0,20.0,20.0,0
+PAT_0660,Control,55,Female,Caucasian,5,,,0
+PAT_0661,Control,65,Female,Asian,0,,,0
+PAT_0662,SjD,42,Female,Asian,1,29.0,28.0,1
+PAT_0663,SjD,57,Female,African American,5,14.0,9.0,0
+PAT_0664,Control,27,Female,Caucasian,1,,,0
+PAT_0665,Control,35,Male,Caucasian,2,,,0
+PAT_0666,SjD,31,Female,Caucasian,5,34.0,29.0,1
+PAT_0667,SLE,42,Female,Caucasian,4,45.0,41.0,1
+PAT_0668,SLE,34,Male,Caucasian,5,18.0,13.0,0
+PAT_0669,Control,66,Male,Caucasian,4,,,0
+PAT_0670,SLE,18,Female,Hispanic,1,16.0,15.0,0
+PAT_0671,SLE,34,Female,Caucasian,0,36.0,36.0,1
+PAT_0672,SjD,52,Male,Asian,1,37.0,36.0,1
+PAT_0673,SjD,42,Female,Caucasian,0,48.0,48.0,1
+PAT_0674,Control,43,Female,Hispanic,3,,,0
+PAT_0675,SLE,37,Female,Caucasian,3,24.0,21.0,0
+PAT_0676,SjD,52,Female,Asian,4,48.0,44.0,1
+PAT_0677,Control,38,Female,Hispanic,0,,,0
+PAT_0678,Control,42,Female,Caucasian,2,,,0
+PAT_0679,Control,65,Male,Caucasian,3,,,0
+PAT_0680,SLE,35,Female,Other,1,12.0,11.0,0
+PAT_0681,SLE,37,Female,Caucasian,4,16.0,12.0,0
+PAT_0682,SjD,43,Female,African American,5,28.0,23.0,0
+PAT_0683,SLE,44,Female,Caucasian,3,40.0,37.0,1
+PAT_0684,Control,31,Female,Caucasian,1,,,0
+PAT_0685,SLE,34,Female,Caucasian,5,20.0,15.0,0
+PAT_0686,SjD,46,Male,Asian,5,47.0,42.0,1
+PAT_0687,SLE,32,Female,Hispanic,0,28.0,28.0,1
+PAT_0688,SLE,40,Female,Caucasian,0,51.0,51.0,1
+PAT_0689,SLE,27,Female,Caucasian,1,41.0,40.0,1
+PAT_0690,SLE,30,Female,Hispanic,5,25.0,20.0,0
+PAT_0691,Control,39,Male,Caucasian,5,,,0
+PAT_0692,Control,50,Female,Asian,0,,,0
+PAT_0693,SjD,43,Female,Caucasian,4,32.0,28.0,1
+PAT_0694,Control,49,Female,African American,5,,,0
+PAT_0695,SjD,52,Female,Caucasian,3,8.0,5.0,0
+PAT_0696,Control,41,Female,Caucasian,1,,,0
+PAT_0697,Control,53,Female,Caucasian,0,,,0
+PAT_0698,SjD,42,Male,Asian,1,54.0,53.0,1
+PAT_0699,Control,38,Female,Asian,1,,,0
+PAT_0700,SjD,57,Female,Caucasian,0,44.0,44.0,1
+PAT_0701,Control,65,Male,Hispanic,0,,,0
+PAT_0702,Control,49,Male,Caucasian,0,,,0
+PAT_0703,SjD,55,Female,African American,2,10.0,8.0,0
+PAT_0704,SLE,33,Male,Asian,5,34.0,29.0,1
+PAT_0705,Control,60,Male,Caucasian,2,,,0
+PAT_0706,Control,52,Male,Caucasian,4,,,0
+PAT_0707,SLE,18,Female,Caucasian,4,23.0,19.0,0
+PAT_0708,Control,28,Female,African American,4,,,0
+PAT_0709,SLE,38,Female,Caucasian,2,21.0,19.0,0
+PAT_0710,SjD,55,Female,Asian,5,10.0,5.0,0
+PAT_0711,SjD,32,Female,Caucasian,0,45.0,45.0,1
+PAT_0712,SjD,50,Female,Caucasian,5,43.0,38.0,1
+PAT_0713,SLE,22,Female,Caucasian,2,24.0,22.0,0
+PAT_0714,SjD,32,Female,Caucasian,5,26.0,21.0,0
+PAT_0715,Control,49,Female,Caucasian,3,,,0
+PAT_0716,SLE,39,Female,Caucasian,2,40.0,38.0,1
+PAT_0717,SjD,60,Female,African American,3,56.0,53.0,1
+PAT_0718,Control,22,Female,Other,0,,,0
+PAT_0719,SjD,50,Female,Caucasian,3,49.0,46.0,1
+PAT_0720,Control,55,Female,Caucasian,3,,,0
+PAT_0721,SjD,60,Male,Caucasian,2,14.0,12.0,0
+PAT_0722,SLE,28,Female,Hispanic,3,23.0,20.0,0
+PAT_0723,SjD,41,Female,Caucasian,1,38.0,37.0,1
+PAT_0724,SLE,35,Female,Caucasian,3,15.0,12.0,0
+PAT_0725,SLE,20,Female,Caucasian,3,35.0,32.0,1
+PAT_0726,SLE,22,Male,Caucasian,4,31.0,27.0,1
+PAT_0727,Control,47,Female,Caucasian,0,,,0
+PAT_0728,Control,43,Female,Asian,1,,,0
+PAT_0729,SLE,31,Female,Caucasian,4,34.0,30.0,1
+PAT_0730,SLE,38,Female,African American,3,22.0,19.0,0
+PAT_0731,Control,37,Male,Hispanic,1,,,0
+PAT_0732,SjD,42,Female,Caucasian,1,33.0,32.0,1
+PAT_0733,SjD,26,Female,Caucasian,0,21.0,21.0,0
+PAT_0734,SLE,22,Female,Hispanic,5,23.0,18.0,0
+PAT_0735,SjD,29,Female,Caucasian,4,55.0,51.0,1
+PAT_0736,Control,21,Female,Caucasian,2,,,0
+PAT_0737,SjD,49,Female,Caucasian,3,8.0,5.0,0
+PAT_0738,SLE,28,Female,Hispanic,2,27.0,25.0,1
+PAT_0739,SLE,33,Female,Caucasian,1,10.0,9.0,0
+PAT_0740,SjD,56,Female,African American,0,16.0,16.0,0
+PAT_0741,SLE,27,Female,African American,3,48.0,45.0,1
+PAT_0742,Control,64,Female,Hispanic,4,,,0
+PAT_0743,SjD,50,Female,African American,5,25.0,20.0,0
+PAT_0744,Control,44,Male,Hispanic,0,,,0
+PAT_0745,SjD,43,Female,Hispanic,3,34.0,31.0,1
+PAT_0746,Control,29,Male,African American,2,,,0
+PAT_0747,SLE,18,Female,Caucasian,5,42.0,37.0,1
+PAT_0748,Control,59,Male,Caucasian,3,,,0
+PAT_0749,Control,71,Female,Caucasian,1,,,0
+PAT_0750,Control,35,Female,Caucasian,3,,,0
+PAT_0751,SLE,45,Female,Hispanic,0,15.0,15.0,0
+PAT_0752,Control,44,Female,Hispanic,4,,,0
+PAT_0753,Control,54,Male,Caucasian,0,,,0
+PAT_0754,SLE,29,Female,Hispanic,5,17.0,12.0,0
+PAT_0755,SLE,29,Female,Hispanic,4,29.0,25.0,1
+PAT_0756,SjD,36,Female,Caucasian,2,12.0,10.0,0
+PAT_0757,SjD,58,Female,Hispanic,1,5.0,4.0,0
+PAT_0758,SLE,35,Female,African American,2,27.0,25.0,1
+PAT_0759,SLE,28,Female,Caucasian,3,54.0,51.0,1
+PAT_0760,Control,35,Male,Caucasian,5,,,0
+PAT_0761,Control,44,Female,Other,2,,,0
+PAT_0762,Control,29,Female,Caucasian,0,,,0
+PAT_0763,Control,35,Female,Caucasian,1,,,0
+PAT_0764,SjD,47,Female,Hispanic,0,52.0,52.0,1
+PAT_0765,SjD,61,Female,Hispanic,2,32.0,30.0,1
+PAT_0766,Control,55,Female,African American,5,,,0
+PAT_0767,SjD,27,Female,Caucasian,0,40.0,40.0,1
+PAT_0768,SLE,28,Female,Caucasian,4,49.0,45.0,1
+PAT_0769,SLE,32,Female,African American,3,36.0,33.0,1
+PAT_0770,Control,18,Female,Hispanic,2,,,0
+PAT_0771,Control,28,Male,Caucasian,0,,,0
+PAT_0772,Control,53,Male,Caucasian,4,,,0
+PAT_0773,Control,58,Female,Hispanic,0,,,0
+PAT_0774,Control,56,Male,Caucasian,2,,,0
+PAT_0775,Control,23,Female,Hispanic,5,,,0
+PAT_0776,SjD,45,Male,Caucasian,3,54.0,51.0,1
+PAT_0777,Control,54,Female,African American,5,,,0
+PAT_0778,SLE,29,Female,Hispanic,4,11.0,7.0,0
+PAT_0779,SjD,53,Male,Caucasian,0,13.0,13.0,0
+PAT_0780,Control,46,Female,Asian,1,,,0
+PAT_0781,SjD,54,Female,Caucasian,2,18.0,16.0,0
+PAT_0782,Control,59,Female,Caucasian,5,,,0
+PAT_0783,Control,46,Male,Caucasian,1,,,0
+PAT_0784,SjD,57,Female,Caucasian,3,25.0,22.0,0
+PAT_0785,SLE,22,Male,Hispanic,2,18.0,16.0,0
+PAT_0786,SjD,54,Female,Caucasian,3,25.0,22.0,0
+PAT_0787,SLE,56,Female,Caucasian,3,16.0,13.0,0
+PAT_0788,SjD,43,Female,Caucasian,1,35.0,34.0,1
+PAT_0789,SLE,31,Male,Hispanic,4,37.0,33.0,1
+PAT_0790,SjD,59,Female,Hispanic,5,35.0,30.0,1
+PAT_0791,Control,43,Male,Caucasian,1,,,0
+PAT_0792,SLE,28,Female,Asian,0,12.0,12.0,0
+PAT_0793,SLE,25,Female,Caucasian,5,56.0,51.0,1
+PAT_0794,Control,35,Male,Caucasian,4,,,0
+PAT_0795,SjD,56,Female,Hispanic,0,30.0,30.0,1
+PAT_0796,Control,44,Female,African American,0,,,0
+PAT_0797,Control,54,Female,Hispanic,1,,,0
+PAT_0798,SLE,27,Female,Caucasian,4,54.0,50.0,1
+PAT_0799,SLE,28,Female,Caucasian,4,27.0,23.0,0
+PAT_0800,Control,52,Female,African American,0,,,0
+PAT_0801,SjD,44,Female,Caucasian,3,12.0,9.0,0
+PAT_0802,SLE,33,Female,Caucasian,2,13.0,11.0,0
+PAT_0803,SjD,47,Female,Asian,4,48.0,44.0,1
+PAT_0804,SjD,56,Female,Caucasian,1,53.0,52.0,1
+PAT_0805,SLE,32,Female,Other,5,39.0,34.0,1
+PAT_0806,Control,38,Female,Caucasian,2,,,0
+PAT_0807,SLE,37,Female,Asian,4,19.0,15.0,0
+PAT_0808,SLE,18,Female,Caucasian,3,23.0,20.0,0
+PAT_0809,SLE,35,Female,Caucasian,2,44.0,42.0,1
+PAT_0810,Control,33,Female,Other,5,,,0
+PAT_0811,SLE,25,Female,Other,2,50.0,48.0,1
+PAT_0812,Control,37,Female,Caucasian,3,,,0
+PAT_0813,Control,52,Female,African American,0,,,0
+PAT_0814,SLE,18,Female,African American,4,26.0,22.0,0
+PAT_0815,Control,46,Female,Caucasian,1,,,0
+PAT_0816,Control,36,Male,Caucasian,1,,,0
+PAT_0817,SjD,46,Female,Caucasian,3,48.0,45.0,1
+PAT_0818,Control,31,Female,Caucasian,1,,,0
+PAT_0819,Control,53,Female,Caucasian,3,,,0
+PAT_0820,Control,41,Male,Caucasian,1,,,0
+PAT_0821,Control,53,Male,Caucasian,4,,,0
+PAT_0822,SjD,52,Female,Other,0,25.0,25.0,1
+PAT_0823,Control,29,Female,Caucasian,0,,,0
+PAT_0824,SLE,47,Female,African American,0,7.0,7.0,0
+PAT_0825,Control,64,Male,Caucasian,3,,,0
+PAT_0826,SjD,63,Female,Caucasian,5,49.0,44.0,1
+PAT_0827,Control,51,Female,Caucasian,3,,,0
+PAT_0828,SLE,37,Female,Caucasian,5,44.0,39.0,1
+PAT_0829,SLE,31,Female,Hispanic,3,6.0,3.0,0
+PAT_0830,Control,43,Male,Caucasian,5,,,0
+PAT_0831,SLE,39,Female,Hispanic,4,41.0,37.0,1
+PAT_0832,Control,48,Female,Asian,0,,,0
+PAT_0833,SjD,50,Female,Caucasian,5,50.0,45.0,1
+PAT_0834,SjD,46,Female,Caucasian,1,38.0,37.0,1
+PAT_0835,SLE,28,Female,Caucasian,3,9.0,6.0,0
+PAT_0836,SjD,45,Female,Caucasian,0,46.0,46.0,1
+PAT_0837,SLE,46,Male,African American,1,6.0,5.0,0
+PAT_0838,Control,38,Female,Caucasian,3,,,0
+PAT_0839,SLE,32,Female,African American,2,53.0,51.0,1
+PAT_0840,SLE,44,Female,Caucasian,2,9.0,7.0,0
+PAT_0841,Control,48,Female,Caucasian,1,,,0
+PAT_0842,SLE,34,Female,Caucasian,0,45.0,45.0,1
+PAT_0843,SLE,18,Female,Caucasian,1,26.0,25.0,1
+PAT_0844,SjD,62,Female,Hispanic,2,25.0,23.0,0
+PAT_0845,SjD,49,Female,Hispanic,1,22.0,21.0,0
+PAT_0846,SjD,41,Female,African American,3,11.0,8.0,0
+PAT_0847,SjD,60,Female,Caucasian,2,19.0,17.0,0
+PAT_0848,Control,31,Male,Caucasian,5,,,0
+PAT_0849,SjD,65,Female,Asian,1,54.0,53.0,1
+PAT_0850,Control,53,Male,Caucasian,5,,,0
+PAT_0851,SLE,40,Female,African American,1,24.0,23.0,0
+PAT_0852,SjD,51,Female,Hispanic,5,21.0,16.0,0
+PAT_0853,Control,67,Female,Caucasian,2,,,0
+PAT_0854,SLE,33,Male,Caucasian,4,33.0,29.0,1
+PAT_0855,Control,44,Female,Caucasian,5,,,0
+PAT_0856,Control,53,Male,Caucasian,4,,,0
+PAT_0857,Control,33,Female,Caucasian,0,,,0
+PAT_0858,SjD,44,Female,Caucasian,4,48.0,44.0,1
+PAT_0859,Control,37,Male,Caucasian,5,,,0
+PAT_0860,SLE,53,Male,African American,3,48.0,45.0,1
+PAT_0861,Control,30,Female,African American,1,,,0
+PAT_0862,SjD,35,Female,African American,1,44.0,43.0,1
+PAT_0863,Control,20,Female,Asian,0,,,0
+PAT_0864,SLE,27,Male,Hispanic,0,33.0,33.0,1
+PAT_0865,Control,34,Female,Caucasian,1,,,0
+PAT_0866,SjD,50,Male,Caucasian,1,20.0,19.0,0
+PAT_0867,SLE,36,Male,Caucasian,1,16.0,15.0,0
+PAT_0868,SLE,32,Female,Caucasian,1,6.0,5.0,0
+PAT_0869,SLE,29,Female,Caucasian,4,15.0,11.0,0
+PAT_0870,SLE,24,Female,Caucasian,2,35.0,33.0,1
+PAT_0871,SjD,57,Female,Caucasian,0,47.0,47.0,1
+PAT_0872,Control,49,Female,African American,5,,,0
+PAT_0873,SLE,26,Female,Caucasian,3,13.0,10.0,0
+PAT_0874,SjD,54,Female,Hispanic,4,18.0,14.0,0
+PAT_0875,Control,28,Female,Caucasian,0,,,0
+PAT_0876,Control,58,Female,Other,4,,,0
+PAT_0877,SjD,40,Female,Caucasian,4,11.0,7.0,0
+PAT_0878,SLE,35,Female,Caucasian,3,19.0,16.0,0
+PAT_0879,SjD,61,Female,African American,0,4.0,4.0,0
+PAT_0880,Control,49,Female,Caucasian,2,,,0
+PAT_0881,Control,57,Female,Caucasian,1,,,0
+PAT_0882,Control,33,Female,Caucasian,2,,,0
+PAT_0883,Control,39,Female,Caucasian,2,,,0
+PAT_0884,SLE,22,Female,Caucasian,0,26.0,26.0,1
+PAT_0885,SjD,72,Female,Hispanic,0,28.0,28.0,1
+PAT_0886,Control,43,Female,Caucasian,5,,,0
+PAT_0887,SjD,52,Male,Caucasian,3,19.0,16.0,0
+PAT_0888,SLE,36,Female,Asian,2,47.0,45.0,1
+PAT_0889,SjD,66,Female,Hispanic,3,33.0,30.0,1
+PAT_0890,Control,64,Male,Caucasian,4,,,0
+PAT_0891,SjD,30,Male,Caucasian,4,15.0,11.0,0
+PAT_0892,Control,41,Female,Caucasian,4,,,0
+PAT_0893,SLE,22,Female,Hispanic,2,6.0,4.0,0
+PAT_0894,SLE,26,Female,African American,4,55.0,51.0,1
+PAT_0895,SLE,38,Female,Hispanic,3,46.0,43.0,1
+PAT_0896,SjD,50,Female,Caucasian,0,18.0,18.0,0
+PAT_0897,SLE,40,Female,Asian,1,42.0,41.0,1
+PAT_0898,SjD,54,Female,Caucasian,2,50.0,48.0,1
+PAT_0899,SjD,56,Female,African American,4,33.0,29.0,1
+PAT_0900,SjD,45,Male,African American,1,17.0,16.0,0
+PAT_0901,Control,57,Female,Caucasian,5,,,0
+PAT_0902,SjD,58,Female,Caucasian,2,31.0,29.0,1
+PAT_0903,SjD,32,Female,Caucasian,2,32.0,30.0,1
+PAT_0904,SLE,28,Female,Caucasian,2,42.0,40.0,1
+PAT_0905,SjD,46,Female,African American,4,13.0,9.0,0
+PAT_0906,SLE,28,Female,Hispanic,3,17.0,14.0,0
+PAT_0907,Control,47,Female,Caucasian,4,,,0
+PAT_0908,SjD,42,Male,Other,5,11.0,6.0,0
+PAT_0909,Control,46,Male,Caucasian,2,,,0
+PAT_0910,SjD,44,Male,African American,1,35.0,34.0,1
+PAT_0911,SLE,28,Female,African American,4,39.0,35.0,1
+PAT_0912,Control,50,Male,African American,4,,,0
+PAT_0913,Control,47,Female,African American,0,,,0
+PAT_0914,SjD,48,Female,Asian,2,35.0,33.0,1
+PAT_0915,Control,41,Female,Caucasian,5,,,0
+PAT_0916,SjD,42,Female,Asian,4,35.0,31.0,1
+PAT_0917,SjD,50,Female,African American,1,28.0,27.0,1
+PAT_0918,SjD,41,Female,Other,3,8.0,5.0,0
+PAT_0919,SjD,45,Female,Caucasian,5,21.0,16.0,0
+PAT_0920,SjD,42,Female,Hispanic,4,50.0,46.0,1
+PAT_0921,SLE,26,Female,Hispanic,4,54.0,50.0,1
+PAT_0922,SjD,56,Female,Caucasian,2,14.0,12.0,0
+PAT_0923,SjD,50,Female,Caucasian,1,20.0,19.0,0
+PAT_0924,SLE,39,Female,Caucasian,4,25.0,21.0,0
+PAT_0925,SjD,47,Male,African American,0,29.0,29.0,1
+PAT_0926,SjD,60,Female,Caucasian,4,9.0,5.0,0
+PAT_0927,Control,59,Male,Caucasian,2,,,0
+PAT_0928,Control,47,Female,Caucasian,3,,,0
+PAT_0929,SjD,41,Female,Caucasian,1,43.0,42.0,1
+PAT_0930,SjD,41,Female,Caucasian,2,25.0,23.0,0
+PAT_0931,SLE,39,Female,Caucasian,3,26.0,23.0,0
+PAT_0932,SLE,38,Female,Caucasian,5,24.0,19.0,0
+PAT_0933,Control,33,Female,Hispanic,3,,,0
+PAT_0934,SjD,55,Female,Caucasian,5,32.0,27.0,1
+PAT_0935,Control,26,Female,Caucasian,0,,,0
+PAT_0936,Control,40,Female,Hispanic,3,,,0
+PAT_0937,Control,55,Female,Caucasian,3,,,0
+PAT_0938,SLE,29,Female,African American,1,13.0,12.0,0
+PAT_0939,SjD,49,Male,Hispanic,4,35.0,31.0,1
+PAT_0940,SjD,49,Female,Hispanic,1,24.0,23.0,0
+PAT_0941,SjD,46,Female,Asian,5,55.0,50.0,1
+PAT_0942,SLE,50,Female,Caucasian,4,50.0,46.0,1
+PAT_0943,Control,32,Female,Caucasian,2,,,0
+PAT_0944,Control,63,Male,Hispanic,2,,,0
+PAT_0945,SjD,60,Female,African American,5,30.0,25.0,1
+PAT_0946,SLE,25,Male,African American,2,30.0,28.0,1
+PAT_0947,SjD,43,Female,Caucasian,5,31.0,26.0,1
+PAT_0948,Control,43,Female,African American,3,,,0
+PAT_0949,SjD,28,Female,Hispanic,4,14.0,10.0,0
+PAT_0950,SjD,56,Female,Hispanic,2,37.0,35.0,1
+PAT_0951,SjD,53,Male,Caucasian,0,16.0,16.0,0
+PAT_0952,SLE,28,Female,Hispanic,3,30.0,27.0,1
+PAT_0953,Control,66,Male,Caucasian,0,,,0
+PAT_0954,SjD,49,Female,Caucasian,2,55.0,53.0,1
+PAT_0955,SLE,35,Female,Caucasian,4,13.0,9.0,0
+PAT_0956,SLE,37,Female,Caucasian,4,41.0,37.0,1
+PAT_0957,SLE,31,Female,Caucasian,0,12.0,12.0,0
+PAT_0958,SjD,58,Male,Caucasian,1,40.0,39.0,1
+PAT_0959,Control,50,Female,Caucasian,0,,,0
+PAT_0960,SjD,50,Female,Caucasian,4,30.0,26.0,1
+PAT_0961,Control,54,Female,Hispanic,5,,,0
+PAT_0962,SLE,20,Female,Caucasian,3,25.0,22.0,0
+PAT_0963,SjD,53,Female,African American,4,43.0,39.0,1
+PAT_0964,Control,62,Female,Caucasian,1,,,0
+PAT_0965,Control,46,Female,Caucasian,5,,,0
+PAT_0966,SLE,39,Female,Caucasian,3,56.0,53.0,1
+PAT_0967,Control,49,Male,African American,0,,,0
+PAT_0968,SLE,40,Male,Caucasian,0,47.0,47.0,1
+PAT_0969,SjD,56,Female,Caucasian,2,55.0,53.0,1
+PAT_0970,SjD,53,Female,Caucasian,1,32.0,31.0,1
+PAT_0971,Control,48,Male,Caucasian,3,,,0
+PAT_0972,SLE,21,Female,African American,2,14.0,12.0,0
+PAT_0973,SLE,30,Female,Hispanic,3,29.0,26.0,1
+PAT_0974,SLE,40,Male,African American,0,28.0,28.0,1
+PAT_0975,SLE,35,Female,Caucasian,3,24.0,21.0,0
+PAT_0976,Control,51,Female,African American,1,,,0
+PAT_0977,SLE,50,Female,Hispanic,4,47.0,43.0,1
+PAT_0978,SjD,20,Female,Caucasian,3,26.0,23.0,0
+PAT_0979,SLE,18,Female,Hispanic,4,27.0,23.0,0
+PAT_0980,Control,53,Male,Caucasian,2,,,0
+PAT_0981,SjD,45,Female,Caucasian,0,16.0,16.0,0
+PAT_0982,SLE,33,Female,African American,2,46.0,44.0,1
+PAT_0983,SjD,45,Female,Asian,2,12.0,10.0,0
+PAT_0984,SjD,55,Female,Caucasian,0,38.0,38.0,1
+PAT_0985,SjD,45,Female,African American,5,41.0,36.0,1
+PAT_0986,SLE,18,Female,Caucasian,5,45.0,40.0,1
+PAT_0987,SLE,18,Female,Caucasian,4,51.0,47.0,1
+PAT_0988,SjD,53,Female,Caucasian,3,36.0,33.0,1
+PAT_0989,SjD,34,Female,Caucasian,4,33.0,29.0,1
+PAT_0990,SjD,63,Female,African American,4,57.0,53.0,1
+PAT_0991,SjD,60,Female,African American,0,16.0,16.0,0
+PAT_0992,SLE,24,Female,Caucasian,4,18.0,14.0,0
+PAT_0993,SLE,19,Female,Caucasian,2,21.0,19.0,0
+PAT_0994,SjD,57,Female,Caucasian,0,9.0,9.0,0
+PAT_0995,SLE,30,Female,African American,3,15.0,12.0,0
+PAT_0996,SjD,29,Female,Hispanic,5,17.0,12.0,0
+PAT_0997,SjD,62,Female,Caucasian,2,21.0,19.0,0
+PAT_0998,SjD,56,Female,Caucasian,5,18.0,13.0,0
+PAT_0999,SjD,48,Female,Caucasian,1,16.0,15.0,0
+PAT_1000,SjD,43,Female,African American,2,7.0,5.0,0
+PAT_1001,Control,38,Female,Caucasian,5,,,0
+PAT_1002,SjD,47,Female,African American,5,48.0,43.0,1
+PAT_1003,SLE,31,Male,Asian,2,45.0,43.0,1
+PAT_1004,SjD,25,Male,Caucasian,3,24.0,21.0,0
+PAT_1005,Control,32,Female,Caucasian,3,,,0
+PAT_1006,SLE,31,Female,Other,3,37.0,34.0,1
+PAT_1007,Control,51,Female,Caucasian,3,,,0
+PAT_1008,SLE,29,Female,African American,0,21.0,21.0,0
+PAT_1009,SjD,40,Female,Caucasian,5,40.0,35.0,1
+PAT_1010,SjD,63,Female,Caucasian,1,34.0,33.0,1
+PAT_1011,SjD,31,Female,Caucasian,1,53.0,52.0,1
+PAT_1012,SjD,48,Female,Hispanic,1,53.0,52.0,1
+PAT_1013,Control,33,Male,Caucasian,2,,,0
+PAT_1014,SLE,25,Male,African American,0,20.0,20.0,0
+PAT_1015,SLE,23,Female,Caucasian,0,20.0,20.0,0
+PAT_1016,SLE,29,Female,African American,4,9.0,5.0,0
+PAT_1017,SLE,35,Female,Caucasian,1,37.0,36.0,1
+PAT_1018,SjD,46,Male,Caucasian,5,22.0,17.0,0
+PAT_1019,SjD,50,Female,Caucasian,5,30.0,25.0,1
+PAT_1020,SLE,29,Female,Caucasian,0,3.0,3.0,0
+PAT_1021,SLE,40,Female,Caucasian,4,52.0,48.0,1
+PAT_1022,SjD,41,Female,Caucasian,5,8.0,3.0,0
+PAT_1023,SjD,43,Male,Hispanic,0,42.0,42.0,1
+PAT_1024,SLE,49,Female,Caucasian,0,8.0,8.0,0
+PAT_1025,Control,30,Female,Caucasian,1,,,0
+PAT_1026,SjD,64,Female,Hispanic,1,23.0,22.0,0
+PAT_1027,Control,48,Male,Caucasian,5,,,0
+PAT_1028,SLE,18,Female,Hispanic,2,53.0,51.0,1
+PAT_1029,SjD,50,Female,Other,4,49.0,45.0,1
+PAT_1030,Control,36,Male,African American,3,,,0
+PAT_1031,SjD,39,Female,African American,3,46.0,43.0,1
+PAT_1032,SjD,36,Female,Caucasian,0,7.0,7.0,0
+PAT_1033,SjD,49,Female,Hispanic,1,27.0,26.0,1
+PAT_1034,SjD,49,Female,Caucasian,1,27.0,26.0,1
+PAT_1035,Control,35,Female,Caucasian,3,,,0
+PAT_1036,Control,35,Female,Caucasian,1,,,0
+PAT_1037,Control,32,Male,Caucasian,2,,,0
+PAT_1038,SLE,29,Female,Caucasian,1,4.0,3.0,0
+PAT_1039,SjD,51,Male,Caucasian,4,31.0,27.0,1
+PAT_1040,SjD,41,Female,Caucasian,3,29.0,26.0,1
+PAT_1041,SLE,30,Female,Hispanic,4,40.0,36.0,1
+PAT_1042,SLE,21,Female,African American,3,47.0,44.0,1
+PAT_1043,Control,41,Female,Caucasian,4,,,0
+PAT_1044,Control,27,Female,Caucasian,4,,,0
+PAT_1045,SjD,54,Female,African American,0,12.0,12.0,0
+PAT_1046,Control,61,Female,African American,5,,,0
+PAT_1047,Control,40,Female,African American,1,,,0
+PAT_1048,Control,48,Female,Asian,1,,,0
+PAT_1049,Control,36,Female,Hispanic,5,,,0
+PAT_1050,SjD,50,Female,Other,2,51.0,49.0,1
+PAT_1051,Control,58,Female,Caucasian,3,,,0
+PAT_1052,SjD,27,Female,Hispanic,2,46.0,44.0,1
+PAT_1053,SjD,47,Female,Caucasian,2,34.0,32.0,1
+PAT_1054,SLE,32,Female,African American,5,40.0,35.0,1
+PAT_1055,SLE,18,Female,Caucasian,2,37.0,35.0,1
+PAT_1056,Control,38,Male,Caucasian,2,,,0
+PAT_1057,Control,37,Female,Hispanic,1,,,0
+PAT_1058,Control,52,Female,African American,2,,,0
+PAT_1059,Control,44,Female,Caucasian,3,,,0
+PAT_1060,SLE,30,Male,Asian,4,37.0,33.0,1
+PAT_1061,SjD,73,Female,Asian,1,48.0,47.0,1
+PAT_1062,SjD,49,Female,Other,1,10.0,9.0,0
+PAT_1063,Control,51,Male,Asian,3,,,0
+PAT_1064,SjD,42,Female,Caucasian,3,39.0,36.0,1
+PAT_1065,SjD,64,Female,Other,4,8.0,4.0,0
+PAT_1066,Control,56,Female,African American,2,,,0
+PAT_1067,Control,33,Female,Caucasian,0,,,0
+PAT_1068,SjD,59,Female,Caucasian,2,36.0,34.0,1
+PAT_1069,SjD,61,Female,Caucasian,2,38.0,36.0,1
+PAT_1070,SLE,36,Female,Caucasian,0,5.0,5.0,0
+PAT_1071,SLE,36,Female,African American,0,11.0,11.0,0
+PAT_1072,SLE,30,Female,Caucasian,2,45.0,43.0,1
+PAT_1073,Control,63,Female,Caucasian,5,,,0
+PAT_1074,SjD,51,Female,Caucasian,2,54.0,52.0,1
+PAT_1075,SjD,41,Female,African American,3,39.0,36.0,1
+PAT_1076,SjD,57,Female,African American,0,3.0,3.0,0
+PAT_1077,SLE,27,Female,Hispanic,1,27.0,26.0,1
+PAT_1078,SLE,30,Female,Hispanic,0,14.0,14.0,0
+PAT_1079,SjD,68,Female,Caucasian,3,28.0,25.0,1
+PAT_1080,SLE,21,Female,Caucasian,2,10.0,8.0,0
+PAT_1081,SjD,43,Female,Caucasian,2,15.0,13.0,0
+PAT_1082,SLE,44,Female,Caucasian,4,32.0,28.0,1
+PAT_1083,Control,23,Female,Other,5,,,0
+PAT_1084,Control,56,Female,Asian,5,,,0
+PAT_1085,SjD,61,Female,Caucasian,2,40.0,38.0,1
+PAT_1086,SjD,40,Female,Hispanic,2,22.0,20.0,0
+PAT_1087,SjD,41,Female,Caucasian,4,7.0,3.0,0
+PAT_1088,SLE,18,Female,African American,2,23.0,21.0,0
+PAT_1089,SLE,27,Female,Caucasian,4,23.0,19.0,0
+PAT_1090,SjD,28,Male,Caucasian,4,21.0,17.0,0
+PAT_1091,SLE,23,Female,Caucasian,1,41.0,40.0,1
+PAT_1092,SLE,28,Female,African American,4,9.0,5.0,0
+PAT_1093,Control,42,Female,Caucasian,5,,,0
+PAT_1094,SLE,37,Female,Caucasian,4,17.0,13.0,0
+PAT_1095,Control,41,Female,African American,5,,,0
+PAT_1096,SjD,34,Female,Hispanic,1,38.0,37.0,1
+PAT_1097,SLE,27,Female,African American,3,36.0,33.0,1
+PAT_1098,Control,25,Male,Caucasian,0,,,0
+PAT_1099,SLE,36,Female,Asian,0,14.0,14.0,0
+PAT_1100,SjD,40,Female,Hispanic,0,16.0,16.0,0
+PAT_1101,Control,67,Female,Caucasian,3,,,0
+PAT_1102,SjD,49,Female,Caucasian,3,10.0,7.0,0
+PAT_1103,SjD,47,Female,Caucasian,0,53.0,53.0,1
+PAT_1104,SLE,26,Female,Hispanic,3,29.0,26.0,1
+PAT_1105,SLE,30,Female,Caucasian,5,21.0,16.0,0
+PAT_1106,SjD,55,Female,Caucasian,3,9.0,6.0,0
+PAT_1107,SLE,23,Female,African American,4,35.0,31.0,1
+PAT_1108,Control,40,Female,Caucasian,0,,,0
+PAT_1109,SLE,44,Female,Caucasian,0,19.0,19.0,0
+PAT_1110,SLE,31,Male,Hispanic,4,42.0,38.0,1
+PAT_1111,Control,40,Male,Hispanic,0,,,0
+PAT_1112,Control,47,Female,Asian,4,,,0
+PAT_1113,Control,55,Male,African American,2,,,0
+PAT_1114,SjD,42,Female,Caucasian,0,13.0,13.0,0
+PAT_1115,SjD,22,Male,Caucasian,0,29.0,29.0,1
+PAT_1116,Control,36,Male,Caucasian,3,,,0
+PAT_1117,SjD,75,Male,Caucasian,1,34.0,33.0,1
+PAT_1118,SLE,31,Female,African American,3,13.0,10.0,0
+PAT_1119,SjD,46,Female,Hispanic,1,4.0,3.0,0
+PAT_1120,SLE,40,Female,Caucasian,4,12.0,8.0,0
+PAT_1121,SLE,41,Female,Caucasian,1,11.0,10.0,0
+PAT_1122,SjD,45,Female,African American,4,15.0,11.0,0
+PAT_1123,Control,47,Male,Caucasian,3,,,0
+PAT_1124,Control,50,Female,Caucasian,4,,,0
+PAT_1125,SLE,36,Female,Other,4,10.0,6.0,0
+PAT_1126,Control,51,Female,Caucasian,3,,,0
+PAT_1127,Control,46,Female,Caucasian,2,,,0
+PAT_1128,Control,40,Female,Caucasian,0,,,0
+PAT_1129,SjD,34,Female,Caucasian,2,44.0,42.0,1
+PAT_1130,SLE,26,Female,Caucasian,0,27.0,27.0,1
+PAT_1131,SjD,46,Female,Caucasian,5,51.0,46.0,1
+PAT_1132,SLE,43,Female,Caucasian,5,58.0,53.0,1
+PAT_1133,SjD,50,Female,African American,2,39.0,37.0,1
+PAT_1134,SjD,52,Female,African American,4,37.0,33.0,1
+PAT_1135,Control,40,Male,Caucasian,5,,,0
+PAT_1136,Control,57,Female,Caucasian,5,,,0
+PAT_1137,SLE,38,Male,Caucasian,1,15.0,14.0,0
+PAT_1138,SLE,30,Female,Caucasian,2,29.0,27.0,1
+PAT_1139,Control,43,Male,Caucasian,2,,,0
+PAT_1140,SLE,38,Female,Other,3,15.0,12.0,0
+PAT_1141,SLE,38,Female,Other,3,55.0,52.0,1
+PAT_1142,SjD,41,Female,Asian,1,32.0,31.0,1
+PAT_1143,Control,52,Female,Asian,5,,,0
+PAT_1144,SLE,22,Female,African American,5,33.0,28.0,1
+PAT_1145,Control,40,Female,Caucasian,0,,,0
+PAT_1146,SjD,41,Female,African American,5,37.0,32.0,1
+PAT_1147,Control,37,Female,Hispanic,3,,,0
+PAT_1148,Control,64,Female,Hispanic,4,,,0
+PAT_1149,Control,42,Male,African American,2,,,0
+PAT_1150,SjD,46,Female,Other,0,49.0,49.0,1
+PAT_1151,SjD,57,Female,Asian,2,18.0,16.0,0
+PAT_1152,SjD,60,Female,African American,2,27.0,25.0,1
+PAT_1153,Control,69,Female,Caucasian,1,,,0
+PAT_1154,SjD,60,Male,Caucasian,1,33.0,32.0,1
+PAT_1155,SLE,45,Female,African American,0,14.0,14.0,0
+PAT_1156,Control,46,Female,Caucasian,4,,,0
+PAT_1157,Control,71,Female,African American,0,,,0
+PAT_1158,SLE,31,Female,African American,4,26.0,22.0,0
+PAT_1159,Control,48,Female,Caucasian,2,,,0
+PAT_1160,SLE,31,Female,Hispanic,5,55.0,50.0,1
+PAT_1161,SLE,26,Female,Caucasian,4,21.0,17.0,0
+PAT_1162,Control,60,Female,Caucasian,2,,,0
+PAT_1163,SjD,47,Female,Hispanic,1,20.0,19.0,0
+PAT_1164,SLE,35,Female,Caucasian,3,33.0,30.0,1
+PAT_1165,SLE,35,Female,Caucasian,3,11.0,8.0,0
+PAT_1166,Control,39,Female,Caucasian,4,,,0
+PAT_1167,SjD,59,Male,Hispanic,0,26.0,26.0,1
+PAT_1168,SjD,46,Female,Hispanic,1,8.0,7.0,0
+PAT_1169,SLE,33,Female,Caucasian,2,48.0,46.0,1
+PAT_1170,Control,26,Male,Caucasian,0,,,0
+PAT_1171,Control,50,Male,Hispanic,2,,,0
+PAT_1172,SLE,36,Female,Caucasian,5,13.0,8.0,0
+PAT_1173,SjD,48,Female,African American,0,22.0,22.0,0
+PAT_1174,SLE,18,Female,African American,5,52.0,47.0,1
+PAT_1175,SjD,39,Female,Caucasian,4,53.0,49.0,1
+PAT_1176,SjD,54,Female,Caucasian,2,21.0,19.0,0
+PAT_1177,Control,59,Male,Caucasian,1,,,0
+PAT_1178,Control,52,Female,Caucasian,2,,,0
+PAT_1179,SjD,43,Male,African American,2,25.0,23.0,0
+PAT_1180,SLE,38,Female,African American,5,42.0,37.0,1
+PAT_1181,SLE,33,Female,Caucasian,1,26.0,25.0,1
+PAT_1182,SjD,58,Female,Asian,3,6.0,3.0,0
+PAT_1183,Control,58,Male,Caucasian,5,,,0
+PAT_1184,SLE,36,Female,Caucasian,2,20.0,18.0,0
+PAT_1185,SjD,35,Female,Caucasian,2,51.0,49.0,1
+PAT_1186,SLE,39,Female,African American,4,8.0,4.0,0
+PAT_1187,SLE,23,Female,African American,5,12.0,7.0,0
+PAT_1188,SLE,31,Female,Caucasian,0,28.0,28.0,1
+PAT_1189,SLE,26,Female,Caucasian,5,57.0,52.0,1
+PAT_1190,SLE,33,Male,African American,4,42.0,38.0,1
+PAT_1191,Control,53,Female,African American,4,,,0
+PAT_1192,SLE,20,Female,Caucasian,0,52.0,52.0,1
+PAT_1193,SLE,29,Female,African American,1,43.0,42.0,1
+PAT_1194,Control,39,Female,Asian,4,,,0
+PAT_1195,Control,40,Male,Caucasian,5,,,0
+PAT_1196,SjD,53,Female,Caucasian,0,16.0,16.0,0
+PAT_1197,Control,50,Female,Caucasian,5,,,0
+PAT_1198,SLE,32,Female,Caucasian,4,7.0,3.0,0
+PAT_1199,SLE,25,Female,Caucasian,2,43.0,41.0,1
+PAT_1200,SjD,61,Female,Caucasian,3,13.0,10.0,0
+PAT_1201,Control,50,Female,Hispanic,5,,,0
+PAT_1202,Control,40,Female,Caucasian,3,,,0
+PAT_1203,Control,29,Female,Asian,2,,,0
+PAT_1204,SLE,19,Female,Caucasian,0,12.0,12.0,0
+PAT_1205,SLE,28,Female,Other,1,45.0,44.0,1
+PAT_1206,SjD,51,Female,Caucasian,3,32.0,29.0,1
+PAT_1207,SLE,29,Female,Caucasian,3,55.0,52.0,1
+PAT_1208,SLE,29,Female,Asian,0,22.0,22.0,0
+PAT_1209,SjD,43,Female,Caucasian,4,14.0,10.0,0
+PAT_1210,Control,61,Male,African American,4,,,0
+PAT_1211,Control,67,Female,African American,4,,,0
+PAT_1212,SjD,56,Female,African American,3,11.0,8.0,0
+PAT_1213,SjD,56,Female,African American,0,10.0,10.0,0
+PAT_1214,SjD,42,Female,Caucasian,5,11.0,6.0,0
+PAT_1215,SjD,72,Female,Caucasian,4,31.0,27.0,1
+PAT_1216,SLE,38,Female,Caucasian,1,11.0,10.0,0
+PAT_1217,SjD,49,Female,Hispanic,3,7.0,4.0,0
+PAT_1218,SLE,40,Female,Caucasian,4,19.0,15.0,0
+PAT_1219,Control,57,Female,Caucasian,5,,,0
+PAT_1220,Control,37,Male,African American,3,,,0
+PAT_1221,SLE,18,Female,Caucasian,3,7.0,4.0,0
+PAT_1222,SjD,60,Female,African American,2,20.0,18.0,0
+PAT_1223,Control,38,Female,Caucasian,1,,,0
+PAT_1224,SjD,47,Female,Caucasian,3,11.0,8.0,0
+PAT_1225,SLE,37,Female,African American,4,18.0,14.0,0
+PAT_1226,SLE,44,Female,Hispanic,0,25.0,25.0,1
+PAT_1227,Control,54,Male,Asian,4,,,0
+PAT_1228,SLE,39,Female,Caucasian,2,30.0,28.0,1
+PAT_1229,Control,67,Female,Caucasian,5,,,0
+PAT_1230,SLE,29,Female,Caucasian,0,9.0,9.0,0
+PAT_1231,SLE,37,Female,African American,2,49.0,47.0,1
+PAT_1232,Control,41,Female,African American,2,,,0
+PAT_1233,SjD,45,Female,Asian,0,17.0,17.0,0
+PAT_1234,SLE,41,Female,African American,2,29.0,27.0,1
+PAT_1235,SjD,46,Female,Asian,1,10.0,9.0,0
+PAT_1236,SjD,19,Male,Hispanic,5,43.0,38.0,1
+PAT_1237,Control,30,Female,African American,2,,,0
+PAT_1238,SLE,23,Female,Hispanic,0,27.0,27.0,1
+PAT_1239,Control,35,Male,Caucasian,3,,,0
+PAT_1240,SLE,44,Female,Asian,5,21.0,16.0,0
+PAT_1241,SjD,50,Female,African American,0,18.0,18.0,0
+PAT_1242,Control,41,Female,Hispanic,2,,,0
+PAT_1243,Control,46,Male,Caucasian,3,,,0
+PAT_1244,SLE,21,Female,Asian,0,11.0,11.0,0
+PAT_1245,SjD,56,Female,Caucasian,3,53.0,50.0,1
+PAT_1246,SLE,18,Female,Caucasian,1,39.0,38.0,1
+PAT_1247,SjD,46,Female,Hispanic,5,30.0,25.0,1
+PAT_1248,SjD,52,Male,Asian,1,7.0,6.0,0
+PAT_1249,SLE,38,Female,Caucasian,1,45.0,44.0,1
+PAT_1250,SLE,44,Female,Asian,3,31.0,28.0,1
+PAT_1251,SLE,26,Female,Caucasian,3,17.0,14.0,0
+PAT_1252,SjD,32,Female,Caucasian,2,47.0,45.0,1
+PAT_1253,SjD,54,Female,Caucasian,1,41.0,40.0,1
+PAT_1254,SjD,55,Female,Caucasian,3,32.0,29.0,1
+PAT_1255,SjD,41,Female,African American,1,28.0,27.0,1
+PAT_1256,SjD,29,Female,Caucasian,2,28.0,26.0,1
+PAT_1257,Control,41,Female,Caucasian,2,,,0
+PAT_1258,SLE,27,Female,African American,4,55.0,51.0,1
+PAT_1259,SLE,36,Male,Caucasian,1,46.0,45.0,1
+PAT_1260,SjD,44,Female,Caucasian,0,28.0,28.0,1
+PAT_1261,Control,51,Female,African American,1,,,0
+PAT_1262,SLE,35,Female,Caucasian,2,42.0,40.0,1
+PAT_1263,SjD,66,Female,African American,2,32.0,30.0,1
+PAT_1264,Control,53,Female,African American,2,,,0
+PAT_1265,Control,43,Female,African American,0,,,0
+PAT_1266,SLE,42,Female,African American,4,11.0,7.0,0
+PAT_1267,Control,32,Female,African American,1,,,0
+PAT_1268,SLE,41,Female,Caucasian,4,10.0,6.0,0
+PAT_1269,SjD,55,Female,Caucasian,4,56.0,52.0,1
+PAT_1270,SjD,52,Female,African American,2,37.0,35.0,1
+PAT_1271,SLE,41,Female,Hispanic,2,11.0,9.0,0
+PAT_1272,Control,18,Female,Caucasian,3,,,0
+PAT_1273,Control,33,Female,Caucasian,3,,,0
+PAT_1274,SjD,54,Female,African American,4,16.0,12.0,0
+PAT_1275,SLE,37,Female,Caucasian,1,9.0,8.0,0
+PAT_1276,SLE,33,Female,Caucasian,0,10.0,10.0,0
+PAT_1277,SLE,37,Female,Caucasian,2,44.0,42.0,1
+PAT_1278,SLE,45,Female,African American,0,10.0,10.0,0
+PAT_1279,SLE,36,Female,Caucasian,2,12.0,10.0,0
+PAT_1280,SLE,25,Female,Asian,1,45.0,44.0,1
+PAT_1281,Control,60,Female,African American,1,,,0
+PAT_1282,Control,28,Female,Other,1,,,0
+PAT_1283,SLE,32,Female,Caucasian,5,20.0,15.0,0
+PAT_1284,Control,34,Female,African American,3,,,0
+PAT_1285,Control,44,Female,African American,5,,,0
+PAT_1286,SLE,38,Female,Asian,1,50.0,49.0,1
+PAT_1287,SjD,30,Female,Caucasian,5,14.0,9.0,0
+PAT_1288,SLE,41,Female,Hispanic,3,11.0,8.0,0
+PAT_1289,SLE,28,Female,Caucasian,2,38.0,36.0,1
+PAT_1290,SjD,35,Female,Caucasian,2,52.0,50.0,1
+PAT_1291,SLE,35,Female,African American,1,51.0,50.0,1
+PAT_1292,SjD,49,Female,African American,4,56.0,52.0,1
+PAT_1293,Control,60,Female,Caucasian,0,,,0
+PAT_1294,SjD,45,Female,Hispanic,0,22.0,22.0,0
+PAT_1295,SjD,47,Female,Caucasian,4,22.0,18.0,0
+PAT_1296,Control,38,Female,Caucasian,2,,,0
+PAT_1297,SjD,42,Female,African American,2,46.0,44.0,1
+PAT_1298,SLE,26,Female,Asian,4,23.0,19.0,0
+PAT_1299,Control,47,Female,Hispanic,2,,,0
+PAT_1300,SLE,38,Female,Hispanic,1,52.0,51.0,1
+PAT_1301,SjD,47,Female,Caucasian,0,7.0,7.0,0
+PAT_1302,Control,43,Male,Other,5,,,0
+PAT_1303,Control,44,Female,Hispanic,4,,,0
+PAT_1304,Control,47,Male,Caucasian,1,,,0
+PAT_1305,SLE,42,Female,Asian,4,49.0,45.0,1
+PAT_1306,Control,45,Female,Other,3,,,0
+PAT_1307,SjD,51,Female,Hispanic,2,20.0,18.0,0
+PAT_1308,SLE,20,Female,Caucasian,5,37.0,32.0,1
+PAT_1309,SLE,22,Female,Caucasian,5,17.0,12.0,0
+PAT_1310,Control,22,Female,Caucasian,4,,,0
+PAT_1311,SLE,22,Female,Caucasian,0,43.0,43.0,1
+PAT_1312,SjD,47,Female,African American,2,34.0,32.0,1
+PAT_1313,SLE,23,Female,Caucasian,1,10.0,9.0,0
+PAT_1314,Control,39,Female,Hispanic,5,,,0
+PAT_1315,Control,42,Female,Asian,4,,,0
+PAT_1316,SLE,28,Male,Asian,4,11.0,7.0,0
+PAT_1317,SLE,38,Female,Caucasian,5,28.0,23.0,0
+PAT_1318,SLE,34,Male,Caucasian,5,57.0,52.0,1
+PAT_1319,SjD,46,Female,Hispanic,3,39.0,36.0,1
+PAT_1320,SjD,49,Female,African American,3,15.0,12.0,0
+PAT_1321,SLE,30,Female,Caucasian,5,38.0,33.0,1
+PAT_1322,SLE,55,Female,Caucasian,3,24.0,21.0,0
+PAT_1323,Control,65,Female,Caucasian,3,,,0
+PAT_1324,SjD,60,Female,Caucasian,0,35.0,35.0,1
+PAT_1325,Control,52,Male,Caucasian,0,,,0
+PAT_1326,SLE,33,Female,Hispanic,1,47.0,46.0,1
+PAT_1327,Control,49,Female,Caucasian,0,,,0
+PAT_1328,Control,53,Female,Caucasian,0,,,0
+PAT_1329,SLE,43,Female,Caucasian,2,22.0,20.0,0
+PAT_1330,SjD,47,Male,Caucasian,5,50.0,45.0,1
+PAT_1331,Control,27,Female,Caucasian,5,,,0
+PAT_1332,Control,48,Female,African American,1,,,0
+PAT_1333,Control,37,Male,Caucasian,5,,,0
+PAT_1334,Control,29,Female,Caucasian,4,,,0
+PAT_1335,Control,35,Male,Caucasian,0,,,0
+PAT_1336,SjD,29,Female,Caucasian,0,37.0,37.0,1
+PAT_1337,Control,30,Male,Hispanic,4,,,0
+PAT_1338,SLE,46,Female,African American,2,38.0,36.0,1
+PAT_1339,Control,56,Female,Other,2,,,0
+PAT_1340,SLE,23,Female,Caucasian,4,27.0,23.0,0
+PAT_1341,Control,38,Male,Caucasian,1,,,0
+PAT_1342,SjD,48,Female,Caucasian,1,15.0,14.0,0
+PAT_1343,SLE,28,Female,Caucasian,5,40.0,35.0,1
+PAT_1344,SjD,40,Female,Caucasian,5,24.0,19.0,0
+PAT_1345,SLE,26,Female,Caucasian,4,44.0,40.0,1
+PAT_1346,SjD,44,Female,Caucasian,3,15.0,12.0,0
+PAT_1347,SjD,51,Female,African American,0,13.0,13.0,0
+PAT_1348,Control,57,Female,Caucasian,2,,,0
+PAT_1349,Control,40,Female,Caucasian,2,,,0
+PAT_1350,Control,50,Male,African American,2,,,0
+PAT_1351,Control,20,Male,Asian,1,,,0
+PAT_1352,Control,52,Male,Caucasian,5,,,0
+PAT_1353,SLE,24,Female,Asian,4,32.0,28.0,1
+PAT_1354,SLE,33,Female,Hispanic,3,26.0,23.0,0
+PAT_1355,Control,52,Female,Caucasian,0,,,0
+PAT_1356,SjD,36,Female,Caucasian,0,3.0,3.0,0
+PAT_1357,Control,55,Male,Caucasian,5,,,0
+PAT_1358,SjD,37,Female,Caucasian,0,40.0,40.0,1
+PAT_1359,Control,41,Male,African American,3,,,0
+PAT_1360,SjD,58,Female,Caucasian,2,53.0,51.0,1
+PAT_1361,SjD,44,Female,Hispanic,1,23.0,22.0,0
+PAT_1362,SLE,25,Female,Caucasian,3,36.0,33.0,1
+PAT_1363,Control,33,Male,Caucasian,2,,,0
+PAT_1364,Control,39,Female,Caucasian,4,,,0
+PAT_1365,SLE,31,Female,Caucasian,4,10.0,6.0,0
+PAT_1366,Control,53,Female,Caucasian,3,,,0
+PAT_1367,SLE,27,Female,African American,5,8.0,3.0,0
+PAT_1368,SLE,31,Male,Hispanic,2,47.0,45.0,1
+PAT_1369,SLE,33,Female,Caucasian,1,19.0,18.0,0
+PAT_1370,SLE,34,Female,Hispanic,1,45.0,44.0,1
+PAT_1371,Control,27,Male,Other,3,,,0
+PAT_1372,Control,39,Female,Caucasian,0,,,0
+PAT_1373,SLE,21,Female,Caucasian,4,11.0,7.0,0
+PAT_1374,Control,37,Female,Caucasian,3,,,0
+PAT_1375,SjD,37,Male,Asian,2,8.0,6.0,0
+PAT_1376,SjD,53,Female,Caucasian,5,49.0,44.0,1
+PAT_1377,Control,57,Female,African American,3,,,0
+PAT_1378,SjD,33,Female,Caucasian,4,52.0,48.0,1
+PAT_1379,Control,41,Female,Asian,0,,,0
+PAT_1380,SjD,58,Female,Asian,4,24.0,20.0,0
+PAT_1381,Control,70,Female,Hispanic,5,,,0
+PAT_1382,Control,62,Female,Caucasian,1,,,0
+PAT_1383,SjD,47,Female,Asian,2,32.0,30.0,1
+PAT_1384,Control,52,Female,Caucasian,0,,,0
+PAT_1385,SjD,40,Female,Caucasian,0,30.0,30.0,1
+PAT_1386,SLE,21,Female,Caucasian,3,18.0,15.0,0
+PAT_1387,SjD,54,Male,Hispanic,0,4.0,4.0,0
+PAT_1388,Control,34,Female,Caucasian,0,,,0
+PAT_1389,SjD,45,Female,Caucasian,4,57.0,53.0,1
+PAT_1390,Control,37,Male,Caucasian,3,,,0
+PAT_1391,Control,47,Female,Caucasian,3,,,0
+PAT_1392,SLE,37,Female,Caucasian,3,12.0,9.0,0
+PAT_1393,SjD,57,Female,Caucasian,4,11.0,7.0,0
+PAT_1394,Control,55,Female,Other,1,,,0
+PAT_1395,SLE,18,Female,African American,3,13.0,10.0,0
+PAT_1396,SLE,33,Female,Caucasian,1,43.0,42.0,1
+PAT_1397,SjD,33,Female,Caucasian,4,48.0,44.0,1
+PAT_1398,SjD,37,Female,African American,0,42.0,42.0,1
+PAT_1399,SjD,56,Female,Caucasian,5,40.0,35.0,1
+PAT_1400,Control,44,Female,Caucasian,2,,,0
+PAT_1401,SLE,23,Female,African American,0,21.0,21.0,0
+PAT_1402,SLE,20,Female,Asian,3,28.0,25.0,1
+PAT_1403,SjD,75,Female,Caucasian,5,48.0,43.0,1
+PAT_1404,Control,55,Male,Hispanic,2,,,0
+PAT_1405,SLE,33,Female,Hispanic,2,24.0,22.0,0
+PAT_1406,Control,66,Female,Caucasian,3,,,0
+PAT_1407,Control,55,Female,African American,3,,,0
+PAT_1408,SjD,56,Female,Caucasian,4,23.0,19.0,0
+PAT_1409,SjD,64,Female,Caucasian,3,33.0,30.0,1
+PAT_1410,SjD,53,Male,African American,3,51.0,48.0,1
+PAT_1411,SLE,28,Female,Caucasian,4,50.0,46.0,1
+PAT_1412,Control,48,Female,Caucasian,5,,,0
+PAT_1413,Control,49,Male,Caucasian,0,,,0
+PAT_1414,SLE,35,Female,Caucasian,0,29.0,29.0,1
+PAT_1415,Control,27,Female,Hispanic,3,,,0
+PAT_1416,Control,47,Female,Caucasian,4,,,0
+PAT_1417,SLE,29,Female,African American,2,11.0,9.0,0
+PAT_1418,Control,50,Female,Caucasian,4,,,0
+PAT_1419,Control,58,Female,African American,4,,,0
+PAT_1420,SjD,49,Male,Caucasian,1,41.0,40.0,1
+PAT_1421,Control,36,Male,African American,4,,,0
+PAT_1422,SLE,36,Female,Hispanic,5,56.0,51.0,1
+PAT_1423,SjD,56,Female,Caucasian,3,16.0,13.0,0
+PAT_1424,SjD,55,Female,Asian,1,46.0,45.0,1
+PAT_1425,SLE,29,Female,African American,5,44.0,39.0,1
+PAT_1426,SjD,51,Female,Caucasian,2,33.0,31.0,1
+PAT_1427,Control,46,Male,Caucasian,5,,,0
+PAT_1428,SjD,52,Female,Caucasian,1,44.0,43.0,1
+PAT_1429,Control,35,Female,Caucasian,5,,,0
+PAT_1430,Control,60,Female,African American,1,,,0
+PAT_1431,SLE,41,Female,African American,2,18.0,16.0,0
+PAT_1432,Control,53,Male,Caucasian,0,,,0
+PAT_1433,SLE,27,Female,Caucasian,4,29.0,25.0,1
+PAT_1434,SjD,24,Female,African American,3,37.0,34.0,1
+PAT_1435,SLE,52,Female,Hispanic,5,19.0,14.0,0
+PAT_1436,Control,36,Male,Caucasian,5,,,0
+PAT_1437,SLE,26,Female,Asian,5,39.0,34.0,1
+PAT_1438,SLE,46,Male,African American,4,27.0,23.0,0
+PAT_1439,SLE,37,Female,Caucasian,4,19.0,15.0,0
+PAT_1440,Control,49,Female,Caucasian,1,,,0
+PAT_1441,SjD,45,Female,African American,3,52.0,49.0,1
+PAT_1442,Control,41,Female,African American,1,,,0
+PAT_1443,Control,49,Female,Caucasian,2,,,0
+PAT_1444,SjD,40,Female,Caucasian,2,32.0,30.0,1
+PAT_1445,Control,51,Female,Caucasian,0,,,0
+PAT_1446,SLE,28,Female,Hispanic,4,53.0,49.0,1
+PAT_1447,SjD,48,Female,Other,5,26.0,21.0,0
+PAT_1448,SLE,20,Female,Hispanic,4,26.0,22.0,0
+PAT_1449,Control,49,Female,African American,4,,,0
+PAT_1450,SjD,62,Female,Caucasian,5,15.0,10.0,0
+PAT_1451,SLE,24,Female,African American,3,15.0,12.0,0
+PAT_1452,SjD,37,Female,Caucasian,4,24.0,20.0,0
+PAT_1453,Control,33,Female,Caucasian,4,,,0
+PAT_1454,SjD,44,Female,Caucasian,3,24.0,21.0,0
+PAT_1455,SjD,45,Female,Caucasian,4,54.0,50.0,1
+PAT_1456,SLE,20,Female,African American,2,33.0,31.0,1
+PAT_1457,SjD,37,Female,African American,0,28.0,28.0,1
+PAT_1458,SLE,35,Female,Caucasian,3,20.0,17.0,0
+PAT_1459,Control,44,Male,Caucasian,1,,,0
+PAT_1460,SjD,58,Female,Hispanic,5,31.0,26.0,1
+PAT_1461,SLE,31,Female,Caucasian,2,41.0,39.0,1
+PAT_1462,SLE,27,Female,Asian,3,34.0,31.0,1
+PAT_1463,Control,18,Male,Caucasian,2,,,0
+PAT_1464,SjD,46,Female,African American,5,44.0,39.0,1
+PAT_1465,SjD,56,Female,Caucasian,3,56.0,53.0,1
+PAT_1466,Control,43,Female,Hispanic,1,,,0
+PAT_1467,SLE,41,Female,Caucasian,4,36.0,32.0,1
+PAT_1468,SLE,23,Female,African American,2,46.0,44.0,1
+PAT_1469,SjD,71,Female,African American,3,6.0,3.0,0
+PAT_1470,Control,43,Female,Hispanic,4,,,0
+PAT_1471,SjD,66,Female,African American,3,28.0,25.0,1
+PAT_1472,SLE,26,Female,African American,0,22.0,22.0,0
+PAT_1473,SjD,52,Female,Caucasian,4,34.0,30.0,1
+PAT_1474,Control,29,Female,Caucasian,0,,,0
+PAT_1475,Control,43,Female,Caucasian,5,,,0
+PAT_1476,Control,50,Male,African American,2,,,0
+PAT_1477,Control,63,Female,African American,2,,,0
+PAT_1478,SLE,26,Female,Hispanic,4,49.0,45.0,1
+PAT_1479,Control,52,Female,African American,2,,,0
+PAT_1480,SLE,43,Male,Caucasian,3,47.0,44.0,1
+PAT_1481,Control,52,Female,Caucasian,2,,,0
+PAT_1482,Control,52,Female,Caucasian,5,,,0
+PAT_1483,SLE,18,Female,Caucasian,1,16.0,15.0,0
+PAT_1484,SLE,35,Female,African American,4,42.0,38.0,1
+PAT_1485,SLE,38,Female,Hispanic,2,31.0,29.0,1
+PAT_1486,SLE,18,Female,Hispanic,3,47.0,44.0,1
+PAT_1487,SLE,24,Female,African American,3,14.0,11.0,0
+PAT_1488,SjD,39,Female,African American,2,16.0,14.0,0
+PAT_1489,Control,53,Female,Caucasian,2,,,0
+PAT_1490,SLE,37,Female,Other,0,11.0,11.0,0
+PAT_1491,Control,42,Male,Caucasian,5,,,0
+PAT_1492,Control,57,Male,African American,5,,,0
+PAT_1493,SLE,49,Female,Caucasian,3,6.0,3.0,0
+PAT_1494,SLE,19,Male,Caucasian,3,10.0,7.0,0
+PAT_1495,SLE,47,Female,Caucasian,4,9.0,5.0,0
+PAT_1496,SjD,45,Female,Caucasian,3,18.0,15.0,0
+PAT_1497,SjD,50,Female,Caucasian,1,51.0,50.0,1
+PAT_1498,SLE,26,Female,Caucasian,3,17.0,14.0,0
+PAT_1499,SLE,18,Female,African American,2,9.0,7.0,0
+PAT_1500,Control,33,Female,Caucasian,1,,,0
